@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+<body
+  lang="{{ .Site.LanguageCode }}"
+  class="w-90 w-60-ns center center-ns work-sans"
+>
+  <p class="lh-copy mt4" style="line-height: 2;">
+    <a
+      href="{{ .Site.BaseURL  }}"
+      class="b bw1 bb pv1 no-underline black hover-bg-black-10 bg-animate"
+      >Home</a
+    >
+    <span class="b">/ </span>
+    <a
+      href="/post"
+      class="b bw1 bb pv1 no-underline black hover-bg-black-10 bg-animate"
+      >Articles</a
+    >
+  </p>
+  <section id="main" class="mt4">
+    <div>
+      <ul id="list" class="pl0">
+        <!-- prettier-ignore -->
+        {{ range .Data.Pages.ByDate.Reverse }}
+        <li class="list pl0 lh-copy">
+          <a
+            class="f3 b dib black hover-bg-black-10 bg-animate space-mono"
+            href="{{ .Permalink}}"
+            >{{ .Title }}</a
+          >
+          <span
+            class="f6 gray db dib-ns"
+            >{{ .Date.Format "January 2, 2006" }}</span
+          >
+        </li>
+        <!-- prettier-ignore -->
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+  </body>
+</html>

@@ -1,0 +1,5 @@
+baseURL = "https://interplanetary.pub/"
+languageCode = "en-us"
+title = "The Interplanetary Publishing Protocol"
+copyright = "2020 Assembl Inc."
+relativeurls = true
