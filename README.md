@@ -1,9 +1,7 @@
 
 <h1 align="center">The Interplanetary Publishing Protocol Website</h1>
 
-<h2 align="center">🍺🌎🔭🪐</h2>
-
-<h3 align="center">Available at <a href="https://interplanetary.pub">https://interplanetary.pub</a></h3>
+<h2 align="center">Available at <a href="https://interplanetary.pub">https://interplanetary.pub</a> 🍺🌎🔭🪐</h2>
 
 <p align="center">
 <a href="https://gohugo.io">
