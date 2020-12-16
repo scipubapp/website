@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+
+h1 {
+  @apply mb-3 text-4xl tracking-tighter text-center lg:text-7xl;
+}
+
+h3 {
+  @apply mb-3 text-2xl font-bold;
+}
+
+.homepage-links {
+  @apply underline bg-transparent rounded-sm md:px-1 md:py-1 from-transparent to-transparent bg-gradient-to-t hover:from-interplanetaryyellow-700 hover:via-interplanetaryyellow-300 hover:to-interplanetaryyellow-200 hover:text-gray-900;
+}
+
+.homepage-headers {
+  @apply mt-5 text-2xl font-semibold md:text-3xl space-mono;
+}
+
+.space-mono {
+  font-family: "Space Mono", "Courier New", Courier, monospace;
+}
+
+.fira-sans {
+  font-family: "Public Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}
