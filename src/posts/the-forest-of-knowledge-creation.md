@@ -1,7 +1,7 @@
 ---
 title: The Forest of Knowledge Creation
 description: This article examines the communications structure of research, academia, and science.
-author: Sebastian L. Mellen
+author: Sebastian L.  Mellen
 date: 2020-09-01
 tags:
   - one
@@ -9,24 +9,36 @@ tags:
   - three
 ---
 
-Conway's law states that organizations will inevitably mirror their organizational communications structure in the technological systems they build. It follows, therefore, that an important part of designing a technological system is to build a proper organizational structure around it.
+## Designing Technology That Matches The Organizational and Communications Structure of Its Users
 
-Currently, the _Interplanetary Publishing Protocol_ (hereafter referred to as _Intpub_) has no organizational structure. For this reason, it is important that we build Intpub's technology in a way that anticipates and mirrors the future structure of its organization and communications. Doing so will ensure that Intpub's technology is compatible with the use cases it is designed for.
+Conway's law states that "any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure." This means that technology will inevitably mirror the communications structure of its builders. It follows, therefore, that an important part of designing a technological system is to build a proper organizational structure around it.
 
-Here, there is an important question to be asked: should the technology design of an open-source project be oriented around the communications structure of its developers or its end users?
+Currently, the _Interplanetary Publishing Protocol_ _(Intpub)_ has no organizational structure. For this reason, it is important that Intpub's technological architecture anticipates and mirrors its future organizational communications structure. Doing so will ensure that Intpub is able to grow without encumberment. But there is another opportunity, which is perhaps more important: Conway's law provides the insight necessary to build software that works for the people it's designed for.
 
-The proposal put forth in this article is that the communications structure of research, academia, and science loosely resembles a forest. In this forest,researchers act as the roots of trees, by taking in information from the outside world and transforming that information into the fruits of knowledge. Then, the tree's fruits potentiate the growth of new ideas by fertilizing the
+NOT A TRADEOFF! JUST AN "AND". WE CAN STRUCTURE THE INTPUB ORGANIZATION CORRECTLY, AND STRUCTURE THE PROJECT TO FIT END USERS TOO!
 
-To further understand this, it is necessary to understand which mechanisms and processes underlie the knowledge creation pipeline.
+It's important to differentiate between designing technology to a) fit the organizational structure of its builders, or b) fit the organizational structure of its users. Should the technological architecture of an open-source project like Intpub be oriented around the communications structure of its developers or its end users? Given the choice, we believe Intpub's technological design should mirror the communications structure of the people who will use it — people in research, academia, and science (RA+S). This can be thought of as a sort of "reverse Conway's law" — Intpub is designing technology that mirrors the communications structure of its users _not_ its developers. This is why understanding the communications structure of RA+S is important.
 
-The principal end goal of research is to accumulate and create knowledge. In science, this knowledge is usually represented in the form of empirical facts, theorems, and principles. In other academic disciplines, knowledge is also represented in less structured mediums like art and literature.
+The proposal put forth in this article is that the communications structure of RA+S loosely resembles a forest. In this forest, researchers act as tree roots, taking in nutrients — information — from the outside world. Through the research process and scientific method, this information is transmuted into "fruits of knowledge," which sprout from the trees. These "fruits of knowledge" then potentiate the growth of new ideas by providing nutrition and fertilization for nascent ideas.
 
-At the core, all forms of academic knowledge are encoded as information. This information is usually encoded in language and text, but for notation-heavy disciplines like mathematics. N
+Currently, this proverbial forest is in crisis. To understand why, we must understand the mechanisms and processes by which knowledge is created today. By constrasting the tools that are used with the optimal communications structure of this ecosystem, we can observe that many problems in RA+S, including those which have fueled the Open Science and Open Access movements, are caused by tools which do not fit the context of the communications structure they're used in. Outdated methods of conducting studies and publishing research have lead to a crisis of "biodiversity" in this forest, and have caused overspecialized silos to emerge which occlude the passage of "informational nutrients" between trees (scientists), and regions of the forest of knowledge. By restructuring how we think about the production, dissemination, and consumption of knowledge, we can solve problems that afflict RA+S, while simultaneously developing a more holistic and accurate view of _how_ the complex system really works.
 
-The goal of this article is not to describe the actual process of knowledge creation, as there are many different processes for creating knowledge, most of which share little in common. Rather, our goal is to produce a metaphorical representation of the infrastructure used to create, process, disseminate, and analyze knowledge. Doing this will allow us to more accurately mirror the structure of knowledge communications in developing Intpub.
+## The Complex and Interrelated System of Knowledge Production, Dissemination, and Consumption
 
-The structure of this network therefore represents a tree. This is the eponymic $|WRONGWORD| should be "relating to the name of the title"$ Tree of Knowledge Creation.
+The principal end goal of research is to accumulate and create knowledge. In science, this knowledge is usually represented in the form of empirical facts, theorems, and principles. In other academic disciplines, this knowledge is also represented in less formally structured mediums like art and literature.
+
+At the core, all forms of academic knowledge are encoded as information. This information is usually encoded in language and discipline-specific notation, like mathematical notation and chemical formulae. Then, this information is stored using some archival method. Since the
+
+The goal of this article is not to describe the actual process of knowledge creation, as there are many different processes for creating knowledge, most of which share little in common. Rather, our goal is to produce a metaphorical representation of the process and structure of creating, processing, disseminating, and analyzing knowledge. Doing this will allow us to more accurately mirror the structure of knowledge communications while architecting Intpub's technology.
 
 belabor a metaphor
 
-https://dl.acm.org/doi/10.1145/1368088.1368160
+## Organizational Myopia — The Crucial Failing of Current Scientific Infrastructure
+
+incipient
+
+---
+
+## Citations
+
+The influence of organizational structure on software quality: an empirical case study: https://dl.acm.org/doi/10.1145/1368088.1368160

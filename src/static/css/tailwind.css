@@ -28,6 +28,10 @@ h3 {
   font-family: "Public Sans", Arial, Helvetica, sans-serif !important;
 }
 
+.custom-serif {
+  font-family: "Bitter", Georgia, "Times New Roman", Times, serif;
+}
+
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],

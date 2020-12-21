@@ -3,13 +3,15 @@ layout: default
 prism: true
 ---
 
-<div class="container px-5 mt-20">
+<div class="container px-5 mt-16 rounded-lg custom-serif bg-gray-50">
   <div
-    class="max-w-5xl pt-20 pb-16 mx-auto mb-12 bg-gray-100 bg-no-repeat bg-cover rounded-2xl bg-opacity-10"
-    style="background-image: url('https://source.unsplash.com/random/800x600')"
+    class="mx-auto mb-16 bg-gray-100 bg-no-repeat bg-cover md:pt-20 md:pb-16 max-w-7xl rounded-2xl bg-opacity-10"
+    style="
+      background-image: url('https://source.unsplash.com/UV5aY8N73dA/800x600');
+    "
   >
     <div
-      class="max-w-4xl p-5 mx-auto text-white border-4 border-solid bg-gradient-to-tr from-interplanetaryblue-700 to-interplanetaryblue-500 border-interplanetaryyellow-200 rounded-xl"
+      class="max-w-6xl p-5 mx-auto text-white border-8 border-gray-200 border-solid bg-gradient-to-tr rounded-2xl from-interplanetaryblue-700 to-interplanetaryblue-500"
     >
       <div class="mb-6 text-center">
         <span class="text-base font-semibold md:text-lg">
@@ -25,11 +27,11 @@ prism: true
             PDF Version
           </a>
         </span>
-        <h2
-          class="w-auto my-4 text-6xl font-bold space-mono md:text-5xl font-heading"
+        <h1
+          class="mx-auto my-4 text-3xl font-bold md:w-4/6 space-mono md:text-6xl font-heading"
         >
           {{title}}
-        </h2>
+        </h1>
       </div>
       <div class="flex justify-center">
         <div class="pr-4 font-semibold text-right">
@@ -48,7 +50,7 @@ prism: true
       </div>
     </div>
   </div>
-  <article class="mx-auto my-4 prose text-gray-900 fira-sans lg:prose-xl">
+  <article class="mx-auto my-4 prose text-gray-900 custom-serif lg:prose-xl">
     {{ content | safe }}
   </article>
 </div>

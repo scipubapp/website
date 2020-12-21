@@ -26,12 +26,29 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   {% if path == "home" %}
   <body
     class="bg-scroll bg-gradient-to-tl from-interplanetaryblue-900 to-interplanetaryblue-600"
   >
-    {% endif %} {% include "./partials/navbar.html" %} {{ content | safe }} {%
+    {% endif %} 
+
+    {% if path !== "home" %}
+    <body
+    class="bg-scroll bg-gray-50"
+  >
+    {% endif %} 
+
+
+    {% include "./partials/navbar.html" %} {{ content | safe }} {%
     include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
