@@ -5,15 +5,15 @@ path: home
 ---
 
 <div
-  class="w-full px-4 mx-auto text-white custom-serif md:px-0 md:w-4/6 center"
+  class="w-full px-4 mx-auto text-black custom-sans md:px-0 md:w-11/12 center"
 >
   <p
-    class="mt-12 text-sm font-semibold leading-5 tracking-wider uppercase md:text-center md:mb-4 md:text-xl"
+    class="mt-12 text-sm font-semibold leading-5 tracking-wider uppercase custom-sans md:text-center md:mb-4 md:text-xl"
   >
     Plug into a global scientific network with the<br />
   </p>
   <h1
-    class="font-bold tracking-tighter text-left md:text-center md:text-4xl lg:text-6xl space-mono"
+    class="font-bold text-left md:text-center md:text-4xl lg:text-6xl space-mono"
   >
     Interplanetary Publishing Protocol
   </h1>
@@ -38,11 +38,11 @@ path: home
   </div>
 
   <nav
-    class="mx-auto mt-5 mb-8 space-y-4 font-semibold space-mono text-md md:text-lg md:text-center"
+    class="mx-auto mt-5 mb-10 space-y-4 font-sans font-normal text-md md:text-lg md:text-center"
   >
     <form>
       <button
-        class="px-4 py-2 font-bold text-white transition duration-100 transform bg-transparent border-4 border-white rounded-lg hover:border-solid hover:scale-110 hover:bg-green-500"
+        class="px-4 py-2 font-bold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm hover:text-white focus:outline-black hover:border-solid hover:bg-gray-900"
         formaction="/blog"
       >
         <svg
@@ -85,7 +85,7 @@ path: home
         <strong>ARTICLES</strong>
       </button>
       <button
-        class="px-4 py-2 my-3 font-semibold text-white transition duration-100 transform bg-transparent border-4 border-white rounded-lg md:mx-2 md:my-0 hover:scale-110 hover:bg-red-700"
+        class="px-4 py-2 my-3 font-semibold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm hover:text-white focus:outline-black md:mx-2 md:my-0 hover:bg-gray-900"
         formaction="https://github.com/interplanetarypub"
         formtarget="_blank"
       >
@@ -110,7 +110,7 @@ path: home
         <strong>CODE</strong>
       </button>
       <button
-        class="px-4 py-2 font-semibold text-white transition duration-100 transform bg-transparent border-4 border-white rounded-lg hover:scale-110 hover:bg-interplanetaryyellow-700"
+        class="px-4 py-2 font-semibold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm hover:text-white focus:outline-black hover:bg-gray-900"
         formaction="https://lucidchart.com"
       >
         <svg
@@ -155,13 +155,50 @@ path: home
     </form>
   </nav>
 
-  <h2
-    class="mx-auto mb-5 text-lg font-medium custom-serif max-w-7xl md:text-center md:text-2xl"
-  >
-    The Interplanetary Publishing Protocol is a way for researchers, academics,
-    and scientists to self-publish their research and other works via a
-    decentralized, redundant, and uncensorable global filesystem.
-  </h2>
+  <h3 class="mb-3 homepage-headers">About IntPub</h3>
+
+  <div class="space-y-3 md:flex md:space-y-0 md:space-x-6">
+    <div
+      class="w-full bg-opacity-50 border-4 border-black rounded bg-amber-50 md:w-1/3"
+    >
+      <div
+        class="py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black bg-gradient-to-r from-amber-300 to-lime-300"
+      >
+        WHAT WE'RE BUILDING
+      </div>
+      <p class="px-2 py-1 text-xl">
+        IntPub is a way for researchers, academics, and scientists to
+        self-publish their works using decentralized, uncensorable tools. The
+        IntPub protocol bridges extant technologies into an open scholarship-oriented protocol.
+      </p>
+    </div>
+    <div
+      class="w-full bg-white border-4 border-black rounded bg-emerald-50 bg-opacity-35 md:w-1/3"
+    >
+      <div
+        class="py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black bg-gradient-to-r from-lime-300 to-cyan-300"
+      >
+        OUR MISSION
+      </div>
+      <p class="px-2 py-1 text-xl">
+        IntPub's mission is to make scientific publishing accessible to all, and
+        to make the outputs of research, academia, and science free and open. We
+        believe that the right to discover and understand is fundamental.
+      </p>
+    </div>
+    <div
+      class="w-full bg-opacity-50 border-4 border-black rounded bg-blue-50 md:w-1/3"
+    >
+      <div
+        class="py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black bg-gradient-to-r from-cyan-300 to-interplanetaryblue-200"
+      >
+        OUR VISION
+      </div>
+      <p class="px-2 py-1 text-xl">
+        We envision a future where science is conducted in a transparent way, from idea and funding through to experimentation and completion. Ergo our goal is to make IntPub the base infrastructure layer for science.
+      </p>
+    </div>
+  </div>
 
   <!--
   {% include "./_includes/partials/yellowbarrierdiv.html" %}
@@ -236,11 +273,16 @@ path: home
     </li>
   </ul>
 
-  <h3 class="homepage-headers">Related</h3>
+  <h3 class="homepage-headers">Related Projects</h3>
   <ul class="space-y-1 text-md md:text-xl">
     <li class="ml-10 list-disc">
       <a href="https://liras.org" class="homepage-links"
         >The Licensing Initiative for Research, Academia, and Science</a
+      >
+    </li>
+    <li class="ml-10 list-disc">
+      <a href="https://torchofknowledge.org" class="homepage-links"
+        >The Torch of Knowledge Podcast</a
       >
     </li>
   </ul>
@@ -261,29 +303,45 @@ path: home
 
   {% include "./_includes/partials/yellowbarrierdiv.html" %}
 
-  <h3 class="homepage-headers">Contact Us</h3>
-  <ul class="ml-10 space-y-1 list-disc text-md md:text-xl">
-    <li>
-      Email:
-      <a class="homepage-links" href="mailto:starship@interplanetary.pub"
-        >starship@interplanetary.pub</a
+  <h3 class="homepage-headers">Stay In Touch</h3>
+
+  <div class="space-x-6 md:flex">
+    <div class="w-1/2 border-4 border-black rounded">
+      <div
+        class="py-1 pl-2 text-2xl font-semibold text-black bg-gray-200 border-b-4 border-black"
       >
-    </li>
-    <li>
-      Phone:
-      <a class="homepage-links">+1 (307) 459-4590</a>
-    </li>
-  </ul>
-  <h3 class="homepage-headers">Mailing List</h3>
-  <form>
-    <input
-      class="px-2 py-1 text-gray-900 border border-black rounded"
-      placeholder="alice@stanford.edu"
-    />
-    <button
-      class="px-2 py-1 mt-3 text-gray-900 border border-black rounded bg-gray-50 md:ml-2"
-    >
-      Subscribe
-    </button>
-  </form>
+        CONTACT US
+      </div>
+      <ul class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl">
+        <li>
+          Email:
+          <a class="homepage-links" href="mailto:starship@interplanetary.pub"
+            >starship@interplanetary.pub</a
+          >
+        </li>
+        <li>
+          Phone:
+          <a class="homepage-links">+1 (307) 459-4590</a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-1/2 border-4 border-black rounded">
+      <div
+        class="py-1 pl-2 text-2xl font-semibold text-black bg-gray-200 border-b-4 border-black"
+      >
+        MAILING LIST
+      </div>
+      <form class="px-2 py-2 my-auto space-y-1 list-disc text-md md:text-xl">
+        <input
+          class="px-2 py-1 text-gray-900 border border-black rounded"
+          placeholder="alice@stanford.edu"
+        />
+        <button
+          class="px-2 py-1 mt-3 text-gray-900 border border-black rounded bg-gray-50 md:ml-2"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
 </div>

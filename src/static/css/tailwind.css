@@ -13,19 +13,19 @@ h3 {
 }
 
 .homepage-links {
-  @apply underline bg-transparent rounded-sm md:px-1 md:py-1 from-transparent to-transparent bg-gradient-to-t hover:from-interplanetaryyellow-700 hover:via-interplanetaryyellow-300 hover:to-interplanetaryyellow-200 hover:text-gray-900;
+  @apply underline bg-transparent rounded-sm md:px-1 md:py-1 from-transparent to-transparent bg-gradient-to-t hover:to-lime-300 hover:from-interplanetaryblue-50 hover:via-lime-200 hover:text-gray-900;
 }
 
 .homepage-headers {
-  @apply mt-5 text-2xl font-semibold md:text-3xl space-mono;
+  @apply mt-5 text-xl font-semibold md:text-4xl space-mono;
 }
 
 .space-mono {
   font-family: "Space Mono", "Courier New", Courier, monospace;
 }
 
-.fira-sans {
-  font-family: "Public Sans", Arial, Helvetica, sans-serif !important;
+.custom-sans {
+  font-family: "Roboto", Arial, Helvetica, sans-serif !important;
 }
 
 .custom-serif {

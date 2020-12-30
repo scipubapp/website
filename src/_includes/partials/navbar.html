@@ -1,41 +1,41 @@
-<div class="mx-auto max-w-7xl">
-  <div
-    class="flex flex-row py-1 mx-2 mt-5 font-sans border-2 border-gray-800 rounded-full lg:mx-1 xl:mx-0 bg-gradient-to-r from-white to-white"
-  >
-    <!-- <nav class="container flex flex-wrap items-center justify-center p-6 mx-auto lg:justify-between lg:px-0" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"><div class="flex items-center"><a href="/" class="text-lg font-bold text-indigo-500">Logo</a></div><button @click="isOpen = !isOpen" type="button" class="block px-2 ml-auto lg:hidden text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180': isOpen }" aria-label="Menu"><svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/><path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg></button><div class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">{% if navigation.items %}<ul class="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">{% for item in navigation.items %}<li class="mr-3 nav__item"><a @click="isOpen = false" class="inline-block px-4 py-2 text-gray-500 no-underline text-ml hover:text-indigo-500" href="{{ item.url }}">{{ item.text }}</a></li>{% endfor %}</ul>{% endif %}</div></nav>-->
-
-    <div class="my-auto ml-4">
-      <img
-        src="/static/img/planet-1.svg"
-        class="self-start h-4 text-left md:h-6"
-      />
-    </div>
-    <div class="mx-auto my-auto">
-      <p
-        class="self-center px-1 text-sm font-medium text-gray-700 align-middle rounded md:text-lg hover:text-black hover:bg-blue-200"
-      >
-        <a href="/">
-          <span class="font-semibold text-green-500">
-            <svg
-              id="bold"
-              enable-background="new 0 0 24 24"
-              height="512"
-              viewBox="0 0 24 24"
-              width="512"
-              xmlns="http://www.w3.org/2000/svg"
-              class="inline w-4 h-4 pb-1 align-middle md:w-5 md:h-5"
-              fill="currentColor"
-            >
-              <path
-                d="m18.75 9h-.75v-3c0-3.309-2.691-6-6-6s-6 2.691-6 6v3h-.75c-1.24 0-2.25 1.009-2.25 2.25v10.5c0 1.241 1.01 2.25 2.25 2.25h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5c0-1.241-1.01-2.25-2.25-2.25zm-10.75-3c0-2.206 1.794-4 4-4s4 1.794 4 4v3h-8z"
-              /></svg
-            >https://</span
-          >interplanetary.pub
-        </a>
-      </p>
-    </div>
-    <div class="my-auto mr-4">
-      <img src="/static/img/planet-2.svg" class="h-4 md:h-6" />
+  <div class="mx-auto md:w-11/12">
+    <div
+      class="flex flex-row py-1 mx-2 mt-8 font-sans bg-transparent border-2 border-black rounded-full bg-truegray-50 lg:mx-1 xl:mx-0"
+    >
+      <div class="my-auto ml-3">
+        <img
+          src="/static/img/planet-1.svg"
+          class="self-start h-4 text-left md:h-6"
+        />
+      </div>
+      <div class="mx-auto my-auto">
+        <p
+          class="self-center px-1 text-sm font-medium text-gray-800 align-middle rounded md:text-lg hover:text-gray-800 hover:bg-blue-100"
+        >
+          <a class="font-semibold" href="/">
+            <span class="font-semibold text-green-600">
+              <svg
+                id="bold"
+                enable-background="new 0 0 24 24"
+                height="512"
+                viewBox="0 0 24 24"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline w-4 h-4 pb-1 align-middle md:w-5 md:h-5"
+                fill="currentColor"
+              >
+                <path
+                  d="m18.75 9h-.75v-3c0-3.309-2.691-6-6-6s-6 2.691-6 6v3h-.75c-1.24 0-2.25 1.009-2.25 2.25v10.5c0 1.241 1.01 2.25 2.25 2.25h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5c0-1.241-1.01-2.25-2.25-2.25zm-10.75-3c0-2.206 1.794-4 4-4s4 1.794 4 4v3h-8z"
+                /></svg
+              >https://</span
+            >intpub.org
+          </a>
+        </p>
+      </div>
+      <div class="my-auto mr-3">
+        <img src="/static/img/planet-2.svg" class="h-4 md:h-6" />
+      </div>
     </div>
   </div>
-</div>
+
+  <!-- <nav class="container flex flex-wrap items-center justify-center p-6 mx-auto lg:justify-between lg:px-0" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"><div class="flex items-center"><a href="/" class="text-lg font-bold text-indigo-500">Logo</a></div><button @click="isOpen = !isOpen" type="button" class="block px-2 ml-auto lg:hidden text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180': isOpen }" aria-label="Menu"><svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/><path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg></button><div class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">{% if navigation.items %}<ul class="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">{% for item in navigation.items %}<li class="mr-3 nav__item"><a @click="isOpen = false" class="inline-block px-4 py-2 text-gray-500 no-underline text-ml hover:text-indigo-500" href="{{ item.url }}">{{ item.text }}</a></li>{% endfor %}</ul>{% endif %}</div></nav>-->

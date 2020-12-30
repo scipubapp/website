@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: {
     mode: "all",
@@ -10,7 +12,40 @@ module.exports = {
     container: {
       center: true,
     },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      black: "#000",
+      white: "#fff",
+      bluegray: colors.blueGray,
+      coolgray: colors.coolGray,
+      gray: colors.gray,
+      truegray: colors.trueGray,
+      warmgray: colors.warmGray,
+      red: colors.red,
+      orange: colors.orange,
+      amber: colors.amber,
+      yellow: colors.yellow,
+      lime: colors.lime,
+      green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      lightblue: colors.lightBlue,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      pink: colors.pink,
+      rose: colors.rose,
+    },
     extend: {
+      opacity: {
+        15: "0.15",
+        35: "0.35",
+        80: "0.80",
+      },
       colors: {
         interplanetaryblue: {
           50: "#92e2ff",
@@ -35,6 +70,16 @@ module.exports = {
           700: "#ebc300",
           800: "#e1b900",
           900: "#d7af00",
+        },
+        chocolate: {
+          50: "#FDF9F3",
+          100: "#fef5ec",
+          200: "#E5DAD2",
+          300: "#f2bd91",
+          400: "#f9f2ed",
+          500: "#fddeba",
+          600: "#FBEFEA",
+          700: "#f9dfae",
         },
       },
     },

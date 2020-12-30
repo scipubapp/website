@@ -6,11 +6,11 @@ layout: blog
   {% set postslist = collections.post %} {% for post in postslist | reverse %}
   <article class="my-8">
     <h2
-      class="mb-2 text-3xl font-bold tracking-tight text-gray-900 underline custom-serif"
+      class="mb-2 text-3xl font-bold tracking-tight text-gray-900 underline"
     >
       <a
         href="{{ post.url | url }}"
-        class="py-1 rounded-sm bg-gradient-to-t hover:to-interplanetaryyellow-300 hover:via-interplanetaryyellow-300 hover:from-interplanetaryyellow-500"
+        class="py-1 rounded-sm bg-gradient-to-l hover:to-amber-300 hover:via-lime-300 hover:from-interplanetaryblue-100"
       >
         {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {%
         endif %}
