@@ -1,6 +1,6 @@
 <h1 align="center">The Interplanetary Publishing Protocol's Website</h1>
 
-<h2 align="center">Available at <a href="https://interplanetary.pub">https://intpub.org</a></h2>
+<h2 align="center">Available at <a href="https://www.intpub.org">https://www.intpub.org</a></h2>
 
 <p align="center">
 <a href="https://www.11ty.dev/">
