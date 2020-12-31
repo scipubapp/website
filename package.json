@@ -22,9 +22,9 @@
     "css": "postcss src/static/css/tailwind.css --o _tmp/static/css/style.css --watch",
     "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css"
   },
-  "name": "interplanetary.pub",
-  "version": "0.0.1",
-  "description": "The website for the Interplanetary Publishing Protocol, available at https://interplanetary.pub",
+  "name": "intpub.org",
+  "version": "0.0.2",
+  "description": "The website for the Interplanetary Publishing Protocol, available at https://intpub.org",
   "main": "index.js",
   "repository": "https://github.com/interplanetarypub/website.git",
   "author": "Sebastian Mellen <s@slm.space>",

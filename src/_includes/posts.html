@@ -11,14 +11,14 @@ prism: true
     "
   >
     <div
-      class="w-auto p-5 mx-12 text-gray-200 border-2 border-gray-200 border-solid bg-gradient-to-t rounded-xl from-interplanetaryblue-700 to-blue-600"
+      class="w-auto p-5 mx-12 text-gray-900 border-8 border-black border-double bg-gradient-to-r rounded-xl to-emerald-100 from-interplanetaryblue-50"
     >
       <div class="mb-6 text-center">
-        <span class="text-base font-semibold text-gray-100 md:text-lg">
+        <span class="text-base font-semibold text-black md:text-lg">
           <a
             class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-300 hover:text-gray-900"
             href="#"
-            >doi:<em>10.36152/ipub.2001b10</em></a
+            >doi:<em>10.36152/intpub.2001b10</em></a
           >
           <span class="mx-2 font-bold"> · </span>
           <a
@@ -35,8 +35,8 @@ prism: true
       </div>
       <div class="flex justify-center">
         <div class="pr-4 font-semibold text-right">
-          <p class="text-xs text-blue-100">Published</p>
-          <p class="mb-1 text-gray-200">{{ date | readableDate }}</p>
+          <p class="text-xs text-gray-700">Published</p>
+          <p class="mb-1 text-black">{{ date | readableDate }}</p>
         </div>
         <img
           class="object-cover w-12 h-12 rounded-full"
@@ -44,17 +44,15 @@ prism: true
           alt=""
         />
         <div class="pl-4 font-semibold text-left">
-          <p class="text-xs text-blue-100">Author</p>
-          <p class="mb-1 text-gray-200">{{ author }}</p>
+          <p class="text-xs text-gray-700">Author</p>
+          <p class="mb-1 text-black">{{ author }}</p>
         </div>
       </div>
     </div>
   </div>
   <div>
     <div class="">
-      <article
-        class="mx-auto my-4 font-sans prose text-gray-900 lg:prose-xl"
-      >
+      <article class="mx-auto my-4 font-sans prose text-gray-900 lg:prose-xl">
         {{ content | safe }}
       </article>
     </div>

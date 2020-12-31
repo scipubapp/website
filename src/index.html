@@ -41,115 +41,20 @@ path: home
     class="mx-auto mt-5 mb-10 space-y-4 font-sans font-normal text-md md:text-lg md:text-center"
   >
     <form>
-      <button
-        class="px-4 py-2 font-bold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm hover:text-white focus:outline-black hover:border-solid hover:bg-gray-900"
-        formaction="/blog"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          style="enable-background: new 0 0 512 512"
-          class="inline w-5 h-5 mr-1 align-middle md:w-6 md:h-6"
-        >
-          <g>
-            <path
-              d="M352.459,220c0-11.046-8.954-20-20-20h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206
-            C343.505,240,352.459,231.046,352.459,220z"
-              fill="currentColor"
-            />
-            <path
-              d="M126.459,280c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H251.57c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20
-            H126.459z"
-              fill="currentColor"
-            />
-            <path
-              d="M173.459,472H106.57c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40h245.889c22.056,0,40,17.944,40,40v123
-            c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V80c0-44.112-35.888-80-80-80H106.57c-44.112,0-80,35.888-80,80v352
-            c0,44.112,35.888,80,80,80h66.889c11.046,0,20-8.954,20-20C193.459,480.954,184.505,472,173.459,472z"
-              fill="currentColor"
-            />
-            <path
-              d="M467.884,289.572c-23.394-23.394-61.458-23.395-84.837-0.016l-109.803,109.56c-2.332,2.327-4.052,5.193-5.01,8.345
-            l-23.913,78.725c-2.12,6.98-0.273,14.559,4.821,19.78c3.816,3.911,9,6.034,14.317,6.034c1.779,0,3.575-0.238,5.338-0.727
-            l80.725-22.361c3.322-0.92,6.35-2.683,8.79-5.119l109.573-109.367C491.279,351.032,491.279,312.968,467.884,289.572z
-             M333.776,451.768l-40.612,11.25l11.885-39.129l74.089-73.925l28.29,28.29L333.776,451.768z M439.615,346.13l-3.875,3.867
-            l-28.285-28.285l3.862-3.854c7.798-7.798,20.486-7.798,28.284,0C447.399,325.656,447.399,338.344,439.615,346.13z"
-              fill="currentColor"
-            />
-            <path
-              d="M332.459,120h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S343.505,120,332.459,120z"
-              fill="currentColor"
-            />
-          </g>
-        </svg>
+      <button class="button-main" formaction="/blog">
+        {% include "./_includes/svgs/articles.svg" %}
         <strong>ARTICLES</strong>
       </button>
       <button
-        class="px-4 py-2 my-3 font-semibold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm hover:text-white focus:outline-black md:mx-2 md:my-0 hover:bg-gray-900"
-        formaction="https://github.com/interplanetarypub"
+        class="my-3 button-main md:mx-2 md:my-0"
+        formaction="https://github.com/intpub"
         formtarget="_blank"
       >
-        <svg
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-          class="inline w-5 h-5 mr-1 md:w-6 md:h-6"
-        >
-          <path
-            d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
-            c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
-            c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
-            c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
-            c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
-            c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
-            c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
-            c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
-            c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"
-            fill="currentColor"
-          />
-        </svg>
+        {% include "./_includes/svgs/github.svg" %}
         <strong>CODE</strong>
       </button>
-      <button
-        class="px-4 py-2 font-semibold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm hover:text-white focus:outline-black hover:bg-gray-900"
-        formaction="https://lucidchart.com"
-      >
-        <svg
-          id="Layer_1"
-          enable-background="new 0 0 512 512"
-          height="512"
-          viewBox="0 0 512 512"
-          width="512"
-          xmlns="http://www.w3.org/2000/svg"
-          class="inline w-5 h-5 mr-1 align-middle md:w-6 md:h-6"
-        >
-          <g>
-            <path
-              d="m371.256 206.777 34.465-19.899c8.315 7.348 19.227 11.821 31.169 11.821 25.989 0 47.134-21.145 47.134-47.134s-21.145-47.133-47.134-47.133-47.133 21.144-47.133 47.133c0 3.2.324 6.326.935 9.348l-34.475 19.904c5.995 7.973 11.06 16.68 15.039 25.96z"
-              fill="currentColor"
-            />
-            <path
-              d="m140.744 305.223-34.465 19.899c-8.315-7.348-19.227-11.822-31.169-11.822-25.989 0-47.134 21.145-47.134 47.134s21.145 47.133 47.134 47.133 47.133-21.144 47.133-47.133c0-3.2-.324-6.326-.934-9.348l34.475-19.904c-5.996-7.972-11.061-16.679-15.04-25.959z"
-              fill="currentColor"
-            />
-            <path
-              d="m122.242 151.566c0-25.989-21.144-47.133-47.133-47.133s-47.134 21.144-47.134 47.133 21.145 47.134 47.134 47.134c11.943 0 22.855-4.473 31.169-11.821l34.465 19.899c3.978-9.28 9.044-17.987 15.039-25.958l-34.475-19.904c.611-3.024.935-6.15.935-9.35z"
-              fill="currentColor"
-            />
-            <path
-              d="m271 420.195v-39.763c-4.92.589-9.924.901-15 .901s-10.08-.312-15-.901v39.763c-18.655 6.281-32.134 23.926-32.134 44.671 0 25.989 21.145 47.134 47.134 47.134s47.134-21.145 47.134-47.134c0-20.745-13.479-38.39-32.134-44.671z"
-              fill="currentColor"
-            />
-            <path
-              d="m436.891 313.3c-11.943 0-22.854 4.473-31.169 11.821l-34.465-19.899c-3.978 9.28-9.044 17.987-15.039 25.958l34.475 19.904c-.611 3.023-.935 6.148-.935 9.348 0 25.989 21.144 47.133 47.133 47.133s47.134-21.144 47.134-47.133-21.145-47.132-47.134-47.132z"
-              fill="currentColor"
-            />
-            <path
-              d="m241 91.805v39.763c4.92-.589 9.924-.901 15-.901s10.08.312 15 .901v-39.763c18.655-6.281 32.133-23.926 32.133-44.671 0-25.989-21.145-47.134-47.134-47.134s-47.133 21.145-47.133 47.134c0 20.746 13.479 38.391 32.134 44.671z"
-              fill="currentColor"
-            />
-            <circle cx="256" cy="256" r="95.333" fill="currentColor" />
-          </g>
-        </svg>
+      <button class="button-main" formaction="https://lucidchart.com">
+        {% include "./_includes/svgs/diagrams.svg" %}
         <strong>DIAGRAMS</strong>
       </button>
     </form>
@@ -158,50 +63,43 @@ path: home
   <h3 class="mb-3 homepage-headers">About IntPub</h3>
 
   <div class="space-y-3 md:flex md:space-y-0 md:space-x-6">
-    <div
-      class="w-full bg-opacity-50 border-4 border-black rounded bg-amber-50 md:w-1/3"
-    >
-      <div
-        class="py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black bg-gradient-to-r from-amber-300 to-lime-300"
-      >
+    <div class="box-one-third">
+      <div class="box-header bg-gradient-to-r from-amber-300 to-lime-300">
         WHAT WE'RE BUILDING
       </div>
       <p class="px-2 py-1 text-xl">
-        IntPub is a way for researchers, academics, and scientists to
-        self-publish their works using decentralized, uncensorable tools. The
-        IntPub protocol bridges extant technologies into an open scholarship-oriented protocol.
+        IntPub is a tool researchers, academics, and scientists can use to
+        self-publish their works on uncensorable & decentralized networks. The
+        protocol is a a scholarship-oriented bridge between existing
+        technologies.
       </p>
     </div>
-    <div
-      class="w-full bg-white border-4 border-black rounded bg-emerald-50 bg-opacity-35 md:w-1/3"
-    >
-      <div
-        class="py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black bg-gradient-to-r from-lime-300 to-cyan-300"
-      >
+    <div class="box-one-third">
+      <div class="box-header bg-gradient-to-r from-lime-300 to-teal-300">
         OUR MISSION
       </div>
       <p class="px-2 py-1 text-xl">
         IntPub's mission is to make scientific publishing accessible to all, and
-        to make the outputs of research, academia, and science free and open. We
-        believe that the right to discover and understand is fundamental.
+        to make scientific knowledge free to access. We believe that the rights
+        to exploration, research, and publication are fundamental.
       </p>
     </div>
-    <div
-      class="w-full bg-opacity-50 border-4 border-black rounded bg-blue-50 md:w-1/3"
-    >
+    <div class="box-one-third">
       <div
-        class="py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black bg-gradient-to-r from-cyan-300 to-interplanetaryblue-200"
+        class="box-header bg-gradient-to-r from-teal-300 to-interplanetaryblue-200"
       >
         OUR VISION
       </div>
       <p class="px-2 py-1 text-xl">
-        We envision a future where science is conducted in a transparent way, from idea and funding through to experimentation and completion. Ergo our goal is to make IntPub the base infrastructure layer for science.
+        We envision a future where the pipeline of science is transparent from
+        idea, to funding, to experimentation and publication. By making IntPub
+        the base infrastructure layer for science, we believe this is possible.
       </p>
     </div>
   </div>
 
   <!--
-  {% include "./_includes/partials/yellowbarrierdiv.html" %}
+  {% include "./_includes/partials/homepagebarrierdiv.html" %}
 
   <h3 class="homepage-headers">Recommended Reading (In Order)</h3>
   <ol
@@ -257,61 +155,72 @@ path: home
     </li>
   </ol>
 -->
-  {% include "./_includes/partials/yellowbarrierdiv.html" %}
+  {% include "./_includes/partials/homepagebarrierdiv.html" %}
 
-  <h3 class="homepage-headers">Find Us Elsewhere</h3>
-  <ul class="ml-10 space-y-1 list-disc text-md md:text-xl">
-    <li class="">
-      <a href="https://github.com/interplanetarypub" class="homepage-links"
-        >Github Repository</a
-      >
-    </li>
-    <li>
-      <a href="https://twitter.com/galacticpub" class="homepage-links"
-        >Twitter</a
-      >
-    </li>
-  </ul>
+  <h3 class="homepage-headers">About the Organization</h3>
 
-  <h3 class="homepage-headers">Related Projects</h3>
-  <ul class="space-y-1 text-md md:text-xl">
-    <li class="ml-10 list-disc">
-      <a href="https://liras.org" class="homepage-links"
-        >The Licensing Initiative for Research, Academia, and Science</a
-      >
-    </li>
-    <li class="ml-10 list-disc">
-      <a href="https://torchofknowledge.org" class="homepage-links"
-        >The Torch of Knowledge Podcast</a
-      >
-    </li>
-  </ul>
+  <div class="space-y-3 md:space-y-0 md:space-x-6 md:flex">
+    <div class="box-one-third">
+      <div class="box-header">FIND US ELSEWHERE</div>
+      <ul class="p-2 ml-8 space-y-1 list-disc text-md md:text-xl">
+        <li class="">
+          <a href="https://github.com/intpub" class="homepage-links"
+            >Github Repository</a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/galacticpub" class="homepage-links"
+            >Twitter</a
+          >
+        </li>
+        <li>Seize the means of publication!</li>
+      </ul>
+    </div>
 
-  <h3 class="homepage-headers">Supporters & Mentors</h3>
-  <ul class="ml-10 space-y-1 list-disc text-md md:text-xl">
-    <li>
-      Founded by:
-      <a href="https://assembl.net" class="homepage-links">Assembl Inc.</a>
-    </li>
-    <li>
-      <strong
-        >Assembl was funded in 2019 by blockchain incubator
-        <a href="https://cvvc.com" class="homepage-links">CV VC</a>
-      </strong>
-    </li>
-  </ul>
+    <div class="box-one-third">
+      <div class="box-header">AFFILIATED PROJECTS</div>
+      <ul class="px-2 py-2 ml-8 space-y-1 text-md md:text-xl">
+        <li class="list-disc">
+          <a href="https://liras.org" class="homepage-links"
+            >LIRAS — The Licensing Initiative for Research, Academia, and
+            Science</a
+          >
+        </li>
+        <li class="list-disc">
+          <a href="https://torchofknowledge.org" class="homepage-links"
+            >The Torch of Knowledge Podcast</a
+          >
+        </li>
+      </ul>
+    </div>
 
-  {% include "./_includes/partials/yellowbarrierdiv.html" %}
+    <div class="box-one-third">
+      <div class="box-header">SUPPORTERS</div>
+      <ul class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl">
+        <li>
+          Founded by
+          <a href="https://assembl.net" class="homepage-links">Assembl Inc.</a>
+        </li>
+        <li>
+          <strong
+            >Assembl was funded in 2019 by leading blockchain incubator&nbsp;<a
+              href="https://cvvc.com"
+              class="homepage-links"
+              >CV VC</a
+            >. Visit their website to get your startup funded!
+          </strong>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {% include "./_includes/partials/homepagebarrierdiv.html" %}
 
   <h3 class="homepage-headers">Stay In Touch</h3>
 
-  <div class="space-x-6 md:flex">
-    <div class="w-1/2 border-4 border-black rounded">
-      <div
-        class="py-1 pl-2 text-2xl font-semibold text-black bg-gray-200 border-b-4 border-black"
-      >
-        CONTACT US
-      </div>
+  <div class="space-y-3 md:space-y-0 md:space-x-6 md:flex">
+    <div class="box-one-half">
+      <div class="box-header">CONTACT US</div>
       <ul class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl">
         <li>
           Email:
@@ -325,12 +234,8 @@ path: home
         </li>
       </ul>
     </div>
-    <div class="w-1/2 border-4 border-black rounded">
-      <div
-        class="py-1 pl-2 text-2xl font-semibold text-black bg-gray-200 border-b-4 border-black"
-      >
-        MAILING LIST
-      </div>
+    <div class="box-one-half">
+      <div class="box-header">MAILING LIST</div>
       <form class="px-2 py-2 my-auto space-y-1 list-disc text-md md:text-xl">
         <input
           class="px-2 py-1 text-gray-900 border border-black rounded"

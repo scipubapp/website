@@ -1,13 +1,10 @@
 ---
 title: Self-Healing Social Networks
-description: Capitalize on low hanging fruit to identify a ballpark value added
-  activity to beta test. Override the digital divide with additional
-  clickthroughs from DevOps.
+description: Hello World
 author: Sebastian L. Mellen
 date: 2020-09-01
 tags:
   - left
   - center
   - right
-draft: true
 ---

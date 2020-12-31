@@ -12,13 +12,33 @@ h3 {
   @apply mb-3 text-2xl font-bold;
 }
 
+.button-main {
+  @apply px-4 py-2 font-semibold text-black transition duration-100 transform bg-transparent border-4 border-black rounded-sm shadow-md hover:text-white focus:outline-black hover:bg-gray-900 hover:shadow-xs hover:shadow-inner;
+}
+
 .homepage-links {
-  @apply underline bg-transparent rounded-sm md:px-1 md:py-1 from-transparent to-transparent bg-gradient-to-t hover:to-lime-300 hover:from-interplanetaryblue-50 hover:via-lime-200 hover:text-gray-900;
+  @apply underline bg-transparent rounded-sm md:py-1 from-transparent to-transparent bg-gradient-to-l hover:to-amber-300 hover:via-lime-300 hover:from-interplanetaryblue-100 hover:text-gray-900;
 }
 
 .homepage-headers {
   @apply mt-5 text-xl font-semibold md:text-4xl space-mono;
 }
+
+/* BOXES */
+
+.box-one-third {
+  @apply w-full bg-transparent border-4 border-black rounded shadow-lg md:w-1/3;
+}
+
+.box-one-half {
+  @apply w-full bg-transparent border-4 border-black rounded shadow-lg md:w-1/2;
+}
+
+.box-header {
+  @apply py-1 pl-2 text-xl font-semibold text-black border-b-4 border-black;
+}
+
+/* FONTS */
 
 .space-mono {
   font-family: "Space Mono", "Courier New", Courier, monospace;
