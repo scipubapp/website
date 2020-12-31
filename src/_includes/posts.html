@@ -1,0 +1,60 @@
+---
+layout: default
+prism: true
+---
+
+<div class="container px-5 mt-16 font-sans rounded-lg">
+  <div
+    class="max-w-6xl mx-auto mb-16 bg-gray-100 bg-no-repeat bg-cover md:pt-12 md:pb-12 rounded-2xl bg-opacity-10"
+    style="
+      background-image: url('https://source.unsplash.com/UV5aY8N73dA/800x600');
+    "
+  >
+    <div
+      class="w-auto p-5 mx-12 text-gray-900 border-8 border-black border-double bg-gradient-to-r rounded-xl to-emerald-100 from-interplanetaryblue-50"
+    >
+      <div class="mb-6 text-center">
+        <span class="text-base font-semibold text-black md:text-lg">
+          <a
+            class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-300 hover:text-gray-900"
+            href="#"
+            >doi:<em>10.36152/intpub.2001b10</em></a
+          >
+          <span class="mx-2 font-bold"> · </span>
+          <a
+            class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-300 hover:text-gray-900"
+          >
+            PDF Version
+          </a>
+        </span>
+        <h1
+          class="mx-auto my-4 text-3xl font-bold md:w-4/6 space-mono md:text-6xl font-heading"
+        >
+          {{title}}
+        </h1>
+      </div>
+      <div class="flex justify-center">
+        <div class="pr-4 font-semibold text-right">
+          <p class="text-xs text-gray-700">Published</p>
+          <p class="mb-1 text-black">{{ date | readableDate }}</p>
+        </div>
+        <img
+          class="object-cover w-12 h-12 rounded-full"
+          src="https://pbs.twimg.com/profile_images/1246173735012335617/iLwIMvfH_400x400.jpg"
+          alt=""
+        />
+        <div class="pl-4 font-semibold text-left">
+          <p class="text-xs text-gray-700">Author</p>
+          <p class="mb-1 text-black">{{ author }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="">
+      <article class="mx-auto my-4 font-sans prose text-gray-900 lg:prose-xl">
+        {{ content | safe }}
+      </article>
+    </div>
+  </div>
+</div>
