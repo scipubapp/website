@@ -6,7 +6,5 @@
 <a href="https://www.11ty.dev/">
 <img src="https://img.shields.io/badge/-made%20with%2011ty-red?style=flat-square&logo=eleventy" alt="Built with Hugo" />
 </a>
-<a href="https://netlify.com">
-<img src="https://img.shields.io/netlify/da5ca139-2eb3-40cf-bd81-8ac32353b3f0?label=Netlify%20deploy&style=flat-square&logo=netlify" alt="Netlify deploy status" />
-</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/006ad9b7-c3e0-46ec-8632-d8aad55b06f3/deploy-status)](https://app.netlify.com/sites/interplanetarypub/deploys)
 </p>
