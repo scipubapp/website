@@ -3,7 +3,7 @@ layout: default
 prism: true
 ---
 
-<div class="container px-5 mt-16 font-sans rounded-lg">
+<div class="container px-5 mt-16 rounded-lg space-mono">
   <div
     class="max-w-6xl mx-auto mb-16 bg-gray-100 bg-no-repeat bg-cover md:pt-12 md:pb-12 rounded-2xl bg-opacity-10"
     style="
@@ -11,24 +11,24 @@ prism: true
     "
   >
     <div
-      class="w-auto p-5 mx-12 text-gray-900 border-8 border-black border-double bg-gradient-to-r rounded-xl to-emerald-100 from-interplanetaryblue-50"
+      class="w-auto p-5 mx-12 text-gray-900 border-8 border-black bg-gradient-to-r rounded-xl to-lime-100 from-cyan-100"
     >
       <div class="mb-6 text-center">
         <span class="text-base font-semibold text-black md:text-lg">
           <a
-            class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-300 hover:text-gray-900"
+            class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-100 hover:text-gray-900"
             href="#"
             >doi:<em>10.36152/intpub.2001b10</em></a
           >
           <span class="mx-2 font-bold"> · </span>
           <a
-            class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-300 hover:text-gray-900"
+            class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-100 hover:text-gray-900"
           >
             PDF Version
           </a>
         </span>
         <h1
-          class="mx-auto my-4 text-3xl font-bold md:w-4/6 space-mono md:text-6xl font-heading"
+          class="mx-auto my-4 text-3xl font-bold space-mono md:text-6xl font-heading"
         >
           {{title}}
         </h1>
@@ -52,7 +52,7 @@ prism: true
   </div>
   <div>
     <div class="">
-      <article class="mx-auto my-4 font-sans prose text-gray-900 lg:prose-xl">
+      <article class="mx-auto my-4 prose text-gray-900 custom-sans lg:prose-xl">
         {{ content | safe }}
       </article>
     </div>

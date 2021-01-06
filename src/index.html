@@ -1,48 +1,48 @@
 ---
 layout: default
-pagetitle: IntPub | Welcome to the Interplanetary Publishing Protocol 
+pagetitle: IntPub | Welcome to the Interplanetary Publishing Protocol
 description: The Interplanetary Publishing Protocol (IntPub) is a tool researchers, academics, and scientists can use to self-publish their works on uncensorable & decentralized networks.
 path: home
 ---
 
 <div
-  class="w-full px-4 mx-auto text-black custom-sans md:px-0 md:w-11/12 center"
+  class="w-full px-4 mx-auto text-black space-mono md:px-0 md:w-11/12 center"
 >
   <p
-    class="mt-12 text-sm font-semibold leading-5 tracking-wider uppercase custom-sans md:text-center md:mb-4 md:text-xl"
+    class="mt-12 text-lg font-semibold leading-5 tracking-wider uppercase space-mono md:text-center md:mb-4 md:text-2xl"
   >
     Plug into a global scientific network with the<br />
   </p>
   <h1
-    class="font-bold text-left md:text-center md:text-4xl lg:text-6xl space-mono"
+    class="text-4xl font-bold leading-tight text-left md:text-center md:text-4xl lg:text-6xl space-mono"
   >
-    Interplanetary Publishing Protocol
+    <span class="">
+      <span class="text-black">Int</span>er<span class="md:hidden">P</span
+      ><span class="hidden md:inline">p</span>lanetary
+      <span class="text-black">Pub</span>lishing Protocol
+    </span>
   </h1>
 
   <div class="hidden mt-12 text-center md:block">
     <img
       src="./static/img/telescope.svg"
-      style="
-        height: 3.5em;
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-      "
+      style="height: 4em; -webkit-transform: scaleX(-1); transform: scaleX(-1)"
       class="inline"
     />
 
     <img
       src="./static/img/flying-saucer.svg"
-      class="inline mx-20"
-      style="height: 2.9em"
+      class="inline px-8 mx-16"
+      style="height: 3.3em"
     />
-    <img src="./static/img/rover.svg" class="inline" style="height: 3em" />
+    <img src="./static/img/rover.svg" class="inline" style="height: 3.3em" />
   </div>
 
   <nav
-    class="mx-auto mt-5 mb-10 space-y-4 font-sans font-normal text-md md:text-lg md:text-center"
+    class="mx-auto mt-5 mb-10 space-y-4 font-normal text-md md:text-lg md:text-center"
   >
     <form>
-      <button class="button-main" formaction="/blog">
+      <button class="button-main shadow-offset-black" formaction="/blog">
         {% include "./_includes/svgs/articles.svg" %}
         <strong>ARTICLES</strong>
       </button>
@@ -65,36 +65,39 @@ path: home
 
   <div class="space-y-3 md:flex md:space-y-0 md:space-x-6">
     <div class="box-one-third">
-      <div class="box-header bg-gradient-to-r from-amber-300 to-lime-300">
-        WHAT WE'RE BUILDING
+      <div
+        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-yellow-200 to-lime-200"
+      >
+        <p class="pt-1 pl-1">What We're Building</p>
       </div>
-      <p class="px-2 py-1 text-xl">
-        IntPub is a tool researchers, academics, and scientists can use to
+      <p class="px-3 py-2 text-xl tracking-tight custom-sans">
+        IntPub is a tool for researchers, academics, and scientists to
         self-publish their works on uncensorable & decentralized networks. The
-        protocol is a a scholarship-oriented bridge between existing
-        technologies.
-      </p>
-    </div>
-    <div class="box-one-third">
-      <div class="box-header bg-gradient-to-r from-lime-300 to-teal-300">
-        OUR MISSION
-      </div>
-      <p class="px-2 py-1 text-xl">
-        IntPub's mission is to make scientific publishing accessible to all, and
-        to make scientific knowledge free to access. We believe that the rights
-        to exploration, research, and publication are fundamental.
+        protocol is a a scholarship-oriented bridge between existing technology.
       </p>
     </div>
     <div class="box-one-third">
       <div
-        class="box-header bg-gradient-to-r from-teal-300 to-interplanetaryblue-200"
+        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-lime-200 to-teal-200"
       >
-        OUR VISION
+        <p class="pt-1 pl-1">Our Mission</p>
       </div>
-      <p class="px-2 py-1 text-xl">
+      <p class="px-3 py-2 text-xl tracking-tight custom-sans">
+        IntPub's mission is to make scientific publishing accessible to all, and
+        to make scientific knowledge free to access. We strongly believe that
+        the rights to explore, research and publish are fundamental.
+      </p>
+    </div>
+    <div class="box-one-third">
+      <div
+        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-teal-200 to-interplanetaryblue-50"
+      >
+        <p class="pt-1 pl-1">Our Vision</p>
+      </div>
+      <p class="px-3 py-2 text-xl tracking-tight custom-sans">
         We envision a future where the pipeline of science is transparent from
-        idea, to funding, to experimentation and publication. By making IntPub
-        the base infrastructure layer for science, we believe this is possible.
+        idea through to publication. We believe establishing IntPub as the base
+        infrastructure layer for science will make this possible.
       </p>
     </div>
   </div>
@@ -158,12 +161,16 @@ path: home
 -->
   {% include "./_includes/partials/homepagebarrierdiv.html" %}
 
-  <h2 class="homepage-headers">About the Organization</h2>
+  <h2 class="mb-3 homepage-headers">About the Organization</h2>
 
   <div class="space-y-3 md:space-y-0 md:space-x-6 md:flex">
     <div class="box-one-third">
-      <div class="box-header">FIND US ELSEWHERE</div>
-      <ul class="p-2 ml-8 space-y-2 list-disc text-md md:text-xl">
+      <div
+        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-cyan-100 to-cyan-200"
+      >
+        <p class="pt-1 pl-1">Find us elsewhere</p>
+      </div>
+      <ul class="p-2 ml-8 space-y-2 list-disc text-md md:text-xl custom-sans">
         <li class="">
           <a href="https://github.com/intpub" class="homepage-links"
             >Github Repository</a
@@ -179,8 +186,12 @@ path: home
     </div>
 
     <div class="box-one-third">
-      <div class="box-header">AFFILIATED PROJECTS</div>
-      <ul class="px-2 py-2 ml-8 space-y-1 text-md md:text-xl">
+      <div
+        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-emerald-100 to-emerald-200"
+      >
+        <p class="pt-1 pl-1">Affiliated Projects</p>
+      </div>
+      <ul class="px-2 py-2 ml-8 space-y-1 text-md md:text-xl custom-sans">
         <li class="list-disc">
           <a href="https://liras.org" class="homepage-links"
             >LIRAS — The Licensing Initiative for Research, Academia, and
@@ -196,8 +207,14 @@ path: home
     </div>
 
     <div class="box-one-third">
-      <div class="box-header">SUPPORTERS</div>
-      <ul class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl">
+      <div
+        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-yellow-100 to-yellow-200"
+      >
+        <p class="pt-1 pl-1">Supporters</p>
+      </div>
+      <ul
+        class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl custom-sans"
+      >
         <li>
           Founded by
           <a href="https://assembl.net" class="homepage-links">Assembl Inc.</a>
@@ -217,7 +234,7 @@ path: home
 
   {% include "./_includes/partials/homepagebarrierdiv.html" %}
 
-  <h2 class="homepage-headers">Stay In Touch</h2>
+  <h2 class="mb-3 homepage-headers">Stay In Touch</h2>
 
   <div class="space-y-3 md:space-y-0 md:space-x-6 md:flex">
     <div class="box-one-half">
@@ -238,7 +255,10 @@ path: home
     <div class="box-one-half">
       <div class="box-header">MAILING LIST</div>
       <form class="px-2 py-2 my-auto space-y-2 list-disc text-md md:text-xl">
-        <label class="text-md md:text-lg">Please sign up for our mailing list! We'll never send you any spam (promise).</label>
+        <label class="text-md md:text-lg"
+          >Please sign up for our mailing list! We'll never send you any spam
+          (promise).</label
+        >
         <input
           class="px-2 py-1 text-gray-900 border border-black rounded"
           placeholder="alice@stanford.edu"

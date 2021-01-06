@@ -5,12 +5,10 @@ layout: blog
 <section class="mt-15">
   {% set postslist = collections.post %} {% for post in postslist | reverse %}
   <article class="my-8">
-    <h2
-      class="mb-2 text-3xl font-bold tracking-tight text-gray-900 underline"
-    >
+    <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 underline">
       <a
         href="{{ post.url | url }}"
-        class="py-1 rounded-sm bg-gradient-to-l hover:to-amber-300 hover:via-lime-300 hover:from-interplanetaryblue-100"
+        class="py-1 rounded-sm hover:bg-black hover:text-white"
       >
         {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {%
         endif %}

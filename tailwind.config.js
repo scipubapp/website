@@ -41,6 +41,10 @@ module.exports = {
       rose: colors.rose,
     },
     extend: {
+      boxShadow: {
+        "offset-black": "2px 2px black",
+        "inner-lg": "inset 0 2px 10px 0 rgba(0, 0, 0, 0.125)",
+      },
       opacity: {
         15: "0.15",
         35: "0.35",
