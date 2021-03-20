@@ -2,10 +2,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^9.0.0",
     "cross-env": "^7.0.2",
     "js-yaml": "^3.14.0",
     "luxon": "^1.25.0",
+    "multiscript": "^0.1.8",
     "npm-run-all": "^4.1.5",
     "postcss-clean": "^1.1.0",
     "postcss-cli": "^7.1.1",
@@ -13,12 +14,11 @@
     "tailwindcss": "^2.0.2"
   },
   "scripts": {
-    "start": "npm-run-all --parallel css eleventy",
     "eleventy": "eleventy --serve",
-    "dev": "eleventy --serve",
+    "dev": "npm-run-all --parallel eleventy css",
     "debug": "set DEBUG=* & eleventy",
     "css": "postcss src/static/css/tailwind.css --o _tmp/static/css/style.css --watch",
-    "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css && mkdir _site/static/fonts/ && touch _site/static/fonts/.touch && cp -r src/static/fonts/** _site/static/fonts"
+    "build": "rm -rf ./_site/ && cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css"
   },
   "name": "intpub.org",
   "version": "0.0.2",
@@ -31,6 +31,6 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.3.1",
     "eleventy": "^1.0.6",
-    "postcss": "^8.0.9"
+    "postcss": "^8.2.8"
   }
 }

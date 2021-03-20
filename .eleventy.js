@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./_tmp/static/css/style.css": "./static/css/style.css",
+    "./_tmp/static/fonts/stylesheet.css": "./static/fonts/stylesheet.css",
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
@@ -39,6 +40,8 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+
+  eleventyConfig.addPassthroughCopy("./src/static/fonts");
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
