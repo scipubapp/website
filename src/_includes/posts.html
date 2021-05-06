@@ -4,21 +4,28 @@ prism: true
 ---
 
 <div class="container px-5 mt-16 rounded-lg space-mono">
+  <div class="max-w-6xl mx-auto">
+    <a
+      href="/blog"
+      class="p-3 mb-8 font-medium border-2 border-black rounded hover:bg-green-100"
+      >☚ Click Here to Go Back A Page</a
+    >
+  </div>
   <div
-    class="max-w-6xl mx-auto mb-16 bg-gray-100 bg-no-repeat bg-cover md:pt-12 md:pb-12 rounded-2xl bg-opacity-10"
+    class="max-w-6xl mx-auto mb-16 bg-gray-100 bg-no-repeat bg-cover md:pt-16 md:px-16 md:pb-16 md:mt-10 rounded-2xl bg-opacity-10"
     style="
-      background-image: url('https://source.unsplash.com/random/800x600');
+      background-image: url('https://source.unsplash.com/aL7SA1ASVdQ/800x600');
     "
   >
     <div
-      class="w-auto p-5 mx-12 text-gray-900 border-8 border-black bg-gradient-to-r rounded-xl to-lime-100 from-cyan-100"
+      class="w-auto p-5 mx-12 text-gray-100 border-4 border-gray-100 shadow-2xl bg-gradient-to-br from-gray-800 to-black rounded-2xl"
     >
       <div class="mb-6 text-center">
-        <span class="text-base font-semibold text-black md:text-lg">
+        <span class="text-base font-semibold text-white md:text-lg">
           <a
             class="px-3 py-1 font-semibold underline rounded-sm hover:bg-interplanetaryyellow-100 hover:text-gray-900"
             href="#"
-            >doi:<em>10.36152/intpub.2001b10</em></a
+            >doi:<em>{{articledoi}}</em></a
           >
           <span class="mx-2 font-bold"> · </span>
           <a
@@ -35,8 +42,8 @@ prism: true
       </div>
       <div class="flex justify-center">
         <div class="pr-4 font-semibold text-right">
-          <p class="text-xs text-gray-700">Published</p>
-          <p class="mb-1 text-black">{{ date | readableDate }}</p>
+          <p class="text-xs text-gray-300">Published</p>
+          <p class="mb-1 text-white">{{ date | readableDate }}</p>
         </div>
         <img
           class="object-cover w-12 h-12 rounded-full"
@@ -44,15 +51,15 @@ prism: true
           alt=""
         />
         <div class="pl-4 font-semibold text-left">
-          <p class="text-xs text-gray-700">Author</p>
-          <p class="mb-1 text-black">{{ author }}</p>
+          <p class="text-xs text-gray-300">Author</p>
+          <p class="mb-1 text-white">{{ author }}</p>
         </div>
       </div>
     </div>
   </div>
   <div>
     <div class="">
-      <article class="mx-auto my-4 prose text-gray-900 custom-sans lg:prose-xl">
+      <article class="mx-auto my-4 prose text-gray-900 custom-sans lg:prose-lg">
         {{ content | safe }}
       </article>
     </div>
