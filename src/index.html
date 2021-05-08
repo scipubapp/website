@@ -11,16 +11,13 @@ path: home
   <p
     class="mt-6 text-lg font-semibold leading-5 tracking-wider uppercase space-mono md:text-center md:mb-4 md:text-2xl"
   >
-    Plug into a global scientific network with the<br />
+    Plug into a global scientific network with the</p>
   </p>
   <h1
-    class="text-4xl font-bold leading-tight text-left md:text-center md:text-4xl lg:text-6xl space-mono"
+    class="text-4xl font-semibold leading-tight tracking-tighter text-left md:text-center md:text-4xl lg:text-6xl space-mono"
   >
-    <span class="font-semibold">
-      <span class="text-black">Int</span>er<span class="md:hidden">P</span
-      ><span class="hidden md:inline">p</span>lanetary
-      <span class="text-black">Pub</span>lishing Protocol
-    </span>
+    <span class="text-black">Intplanetary
+    <span class="text-black">Pub</span>lishing Protocol
   </h1>
 
   <div class="hidden mt-12 text-center md:block">
@@ -28,14 +25,21 @@ path: home
       src="./static/img/telescope.svg"
       style="height: 4em; -webkit-transform: scaleX(-1); transform: scaleX(-1)"
       class="inline"
+      alt="An image of a telescope"
     />
 
     <img
       src="./static/img/flying-saucer.svg"
       class="inline px-8 mx-16"
       style="height: 3.3em"
+      alt="An image of a flying saucer"
     />
-    <img src="./static/img/rover.svg" class="inline" style="height: 3.3em" />
+    <img
+      src="./static/img/rover.svg"
+      class="inline"
+      style="height: 3.3em"
+      alt="An image of a planetary surface exploration rover"
+    />
   </div>
 
   <nav
@@ -61,18 +65,14 @@ path: home
     </form>
   </nav>
 
-  <!--
-
-  <h2 class="mb-3 homepage-headers">About IntPub</h2>-->
-
-  <div class="space-y-3 md:flex md:space-y-0">
-    <div
-      class="border-black md:border-r-2 box-one-third bg-gradient-to-r from-yellow-100 to-green-100"
-    >
+  <div class="space-y-3 border-double md:border-4 md:border-black md:flex md:space-y-0">
+    <div class="md:border-r-2 md:border-black box-one-third bg-gradient-to-br from-orange-50 to-lime-50">
+      <!--  bg-gradient-to-r from-orange-100 via-yellow-100 to-lime-100 -->
       <div
-        class="uppercase border-b-2 border-black box-header bg-gradient-to-r from-yellow-200 to-green-200"
+        class="uppercase border-b-2 border-black box-header bg-gradient-to-r from-orange-100 via-yellow-100 to-lime-100"
       >
-        <p class="pt-1 pl-1">What We're Building</p>
+        <!-- bg-gradient-to-r from-orange-200 via-yellow-200 to-lime-200 -->
+        <h3 class="pt-1 pl-1">What We're Building</h3>
       </div>
       <div class="px-3 py-2">
         <p class="text-xl tracking-tight custom-sans">
@@ -85,13 +85,13 @@ path: home
         </p>
       </div>
     </div>
-    <div
-      class="border-black md:border-r-2 box-one-third bg-gradient-to-r from-green-100 to-teal-100"
-    >
+    <div class="md:border-r-2 md:border-black box-one-third bg-gradient-to-tr from-lime-50 to-cyan-50">
+      <!-- bg-gradient-to-r from-lime-100 via-emerald-100 to-teal-100 -->
       <div
-        class="uppercase border-b-2 border-black box-header bg-gradient-to-r from-green-200 to-teal-200"
+        class="uppercase border-b-2 border-black box-header bg-gradient-to-r from-lime-100 via-emerald-100 to-teal-100"
       >
-        <p class="pt-1 pl-1">Our Mission</p>
+        <!--  bg-gradient-to-r from-lime-200 via-emerald-200 to-teal-200 -->
+        <h3 class="pt-1 pl-1">Our Mission</h3>
       </div>
       <div class="px-3 py-2">
         <p class="text-xl tracking-tight custom-sans">
@@ -104,13 +104,13 @@ path: home
         </p>
       </div>
     </div>
-    <div
-      class="box-one-third bg-gradient-to-r from-teal-100 to-interplanetaryblue-50"
-    >
+    <div class="box-one-third bg-gradient-to-br from-cyan-50 to-lightblue-50">
+      <!-- from-teal-100 via-lightblue-200 to-interplanetaryblue-50 -->
       <div
-        class="uppercase border-b-2 border-black box-header bg-gradient-to-r from-teal-200 to-interplanetaryblue-100"
+        class="uppercase border-b-2 border-black box-header bg-gradient-to-r from-teal-100 via-lightblue-200 to-interplanetaryblue-50"
       >
-        <p class="pt-1 pl-1">Our Vision</p>
+        <!-- bg-gradient-to-r from-teal-200 via-lightblue-300 to-interplanetaryblue-100 -->
+        <h3 class="pt-1 pl-1">Our Vision</h3>
       </div>
       <div class="px-3 py-2">
         <p class="text-xl tracking-tight custom-sans">
@@ -125,189 +125,91 @@ path: home
     </div>
   </div>
 
-  <div class="flex w-full h-auto mt-10 space-x-4 bg-gradient-to-l custom-san">
-    <div class="inline-block box-one-half">
-      Email:
-      <img src="./static/img/diagram-2.svg" class="w-full" />
-    </div>
-    <div class="inline-block text-2xl uppercase box-one-half box-header">
-      Current Publishing Model:
+  {% include "./_includes/partials/homepagebarrierdivleft.html" %}
 
-      <img src="./static/img/diagram-1.svg" class="w-full" />
-    </div>
-  </div>
+  <h2 class="mb-8 homepage-headers">More Reading</h2>
 
-  <!--
-  {% include "./_includes/partials/homepagebarrierdiv.html" %}
-
-  <h2 class="homepage-headers">Recommended Reading (In Order)</h2>
-  <ol
-    class="ml-8 space-y-1 font-normal list-decimal text-md md:text-xl md:list-inside"
+  <div
+    class="grid w-full grid-cols-1 space-y-4 md:space-y-0 md:gap-4 md:grid-cols-2"
   >
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >The Tree of Knowledge Creation</a
-      >
-    </li>
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >A Base Infrastructure Layer for Research</a
-      >
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links">Designing for Dirty Data</a>
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links">Solving the PID Problem</a>
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >Use Universities as Data Storage Devices</a
-      >
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >Cryptographically-Secured Peer Review</a
-      >
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >Geographically-Distributed Studies</a
-      >
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >Self-Healing Social Networks</a
-      >
-    </li>
-
-    <li>
-      <a href="./post/xyz" class="homepage-links"
-        >The Advent of Knowledge Economies</a
-      >
-    </li>
-  </ol>
--->
-
-  <!-- {% include "./_includes/partials/homepagebarrierdiv.html" %} -->
-
-  <!--
-  <h2 class="mb-3 homepage-headers">About the Organization</h2>
-
-  <div class="space-y-3 md:space-y-0 md:space-x-6 md:flex">
-    <div class="box-one-third">
-      <div
-        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-cyan-100 to-cyan-200"
-      >
-        <p class="pt-1 pl-1">Find us elsewhere</p>
+    <div class="p-6 text-black bg-gray-100 border-4 border-black border-double">
+      <div class="pb-2 border-b-2 border-black">
+        <h3 class="text-xl font-medium uppercase">
+          <a
+            class="underline"
+            href="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
+            target="_blank"
+            >Is the staggeringly profitable business of scientific publishing
+            bad for science?</a
+          >
+          {% include "./_includes/partials/svgicon-external-link.html" %}
+        </h3>
+        <p class="italic">Stephen Buranyi for The Guardian</p>
       </div>
-      <ul class="p-2 ml-8 space-y-2 list-disc text-md md:text-xl custom-sans">
-        <li class="">
-          <a href="https://github.com/intpub" class="homepage-links"
-            >Github Repository</a
-          >
-        </li>
-        <li>
-          <a href="https://twitter.com/galacticpub" class="homepage-links"
-            >Twitter</a
-          >
-        </li>
-        <li>Seize the means of publication!</li>
-      </ul>
+      <div class="pt-2 custom-sans">
+        <p>sdflkjasdf</p>
+      </div>
     </div>
 
-    <div class="box-one-third">
-      <div
-        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-emerald-100 to-emerald-200"
-      >
-        <p class="pt-1 pl-1">Affiliated Projects</p>
+    <div class="p-6 border-2 border-black">
+      <div class="pb-2 border-b-2 border-black">
+        <h3 class="text-xl font-medium uppercase">
+          <a
+            class="underline"
+            href="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
+            target="_blank"
+            >Is the staggeringly profitable business of scientific publishing
+            bad for science?</a
+          >
+          {% include "./_includes/partials/svgicon-external-link.html" %}
+        </h3>
+        <p class="italic">Stephen Buranyi for The Guardian</p>
       </div>
-      <ul class="px-2 py-2 ml-8 space-y-1 text-md md:text-xl custom-sans">
-        <li class="list-disc">
-          <a href="https://liras.org" class="homepage-links"
-            >LIRAS — The Licensing Initiative for Research, Academia, and
-            Science</a
-          >
-        </li>
-        <li class="list-disc">
-          <a href="https://torchofknowledge.org" class="homepage-links"
-            >The Torch of Knowledge Podcast</a
-          >
-        </li>
-      </ul>
+      <div class="pt-2 custom-sans">
+        <p>sdflkjasdf</p>
+      </div>
     </div>
 
-    <div class="box-one-third">
-      <div
-        class="uppercase border-b-2 border-black rounded-t-xl box-header bg-gradient-to-r from-yellow-100 to-yellow-200"
-      >
-        <p class="pt-1 pl-1">Supporters</p>
+    <div class="p-6 border-2 border-black">
+      <div class="pb-2 border-b-2 border-black">
+        <h3 class="text-xl font-medium uppercase">
+          <a
+            class="underline"
+            href="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
+            target="_blank"
+            >Is the staggeringly profitable business of scientific publishing
+            bad for science?</a
+          >
+          {% include "./_includes/partials/svgicon-external-link.html" %}
+        </h3>
+        <p class="italic">Stephen Buranyi for The Guardian</p>
       </div>
-      <ul
-        class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl custom-sans"
-      >
-        <li>
-          Founded by
-          <a href="https://assembl.net" class="homepage-links">Assembl Inc.</a>
-        </li>
-        <li>
-          <strong
-            >Assembl was funded in 2019 by leading blockchain incubator&nbsp;<a
-              href="https://cvvc.com"
-              class="homepage-links"
-              >CV VC</a
-            >. Visit their website to get your startup funded!
-          </strong>
-        </li>
-      </ul>
+      <div class="pt-2 custom-sans">
+        <p>sdflkjasdf</p>
+      </div>
+    </div>
+
+    <div class="p-6 text-black bg-gray-100 border-4 border-black border-double">
+      <div class="pb-2 border-b-2 border-black">
+        <h3 class="text-xl font-medium uppercase">
+          <a
+            class="underline"
+            href="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
+            target="_blank"
+            >Is the staggeringly profitable business of scientific publishing
+            bad for science?</a
+          >
+          {% include "./_includes/partials/svgicon-external-link.html" %}
+        </h3>
+        <p class="italic">Stephen Buranyi for The Guardian</p>
+      </div>
+      <div class="pt-2 custom-sans">
+        <p>sdflkjasdf</p>
+      </div>
     </div>
   </div>
 
-  {% include "./_includes/partials/homepagebarrierdiv.html" %}
+  {% include "./_includes/partials/homepagebarrierdivright.html" %}
 
-  <h2 class="mb-3 homepage-headers">Stay In Touch</h2>
-
-  <div class="space-y-3 md:space-y-0 md:space-x-6 md:flex">
-    <div class="box-one-half">
-      <div class="box-header">CONTACT US</div>
-      <ul class="px-2 py-2 ml-8 space-y-1 list-disc text-md md:text-xl">
-        <li>
-          Email:
-          <a class="homepage-links" href="mailto:starship@interplanetary.pub"
-            >starship@interplanetary.pub</a
-          >
-        </li>
-        <li>
-          Phone:
-          <a class="homepage-links" href="tel:13074594590">+1 (307) 459-4590</a>
-        </li>
-      </ul>
-    </div>
-    <div class="box-one-half">
-      <div class="box-header">MAILING LIST</div>
-      <form class="px-2 py-2 my-auto space-y-2 list-disc text-md md:text-xl">
-        <label class="text-md md:text-lg"
-          >Please sign up for our mailing list! We'll never send you any spam
-          (promise).</label
-        >
-        <input
-          class="px-2 py-1 text-gray-900 border border-black rounded"
-          placeholder="alice@stanford.edu"
-        />
-        <button
-          class="px-2 py-1 mt-3 text-gray-900 border border-black rounded bg-gray-50 md:ml-2"
-        >
-          Subscribe
-        </button>
-      </form>
-    </div>
-          </div>
-
-  -->
+  <h2 class="mb-8 homepage-headers">Contact Us</h2>
 </div>
