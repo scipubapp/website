@@ -1,55 +1,52 @@
-const colors = require("tailwindcss/colors");
+const colors = require("tailwindcss/colors")
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
-  purge: {
-    mode: "all",
-    content: ["./**/*.html"],
-    options: {
-      whitelist: [],
+  mode: "jit",
+  purge: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Jetbrains Mono", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        // Now we build the full color palette, using all colors available
+        // as shown at this link: https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+        transparent: "transparent",
+        current: "currentColor",
+        black: "#000",
+        white: "#fff",
+        bluegray: colors.blueGray,
+        coolgray: colors.coolGray,
+        gray: colors.gray,
+        truegray: colors.trueGray,
+        warmgray: colors.warmGray,
+        red: colors.red,
+        orange: colors.orange,
+        amber: colors.amber,
+        yellow: colors.yellow,
+        lime: colors.lime,
+        green: colors.green,
+        emerald: colors.emerald,
+        teal: colors.teal,
+        cyan: colors.cyan,
+        sky: colors.sky,
+        blue: colors.blue,
+        indigo: colors.indigo,
+        violet: colors.violet,
+        purple: colors.purple,
+        fuchsia: colors.fuchsia,
+        pink: colors.pink,
+        rose: colors.rose,
+      },
     },
   },
-  theme: {
-    container: {
-      center: true,
-    },
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      black: "#000",
-      white: "#fff",
-      bluegray: colors.blueGray,
-      coolgray: colors.coolGray,
-      gray: colors.gray,
-      truegray: colors.trueGray,
-      warmgray: colors.warmGray,
-      red: colors.red,
-      orange: colors.orange,
-      amber: colors.amber,
-      yellow: colors.yellow,
-      lime: colors.lime,
-      green: colors.green,
-      emerald: colors.emerald,
-      teal: colors.teal,
-      cyan: colors.cyan,
-      lightblue: colors.lightBlue,
-      blue: colors.blue,
-      indigo: colors.indigo,
-      violet: colors.violet,
-      purple: colors.purple,
-      fuchsia: colors.fuchsia,
-      pink: colors.pink,
-      rose: colors.rose,
-    },
+  variants: {
     extend: {
-      boxShadow: {
-        "offset-black": "2px 2px black",
-        "inner-lg": "inset 0 2px 10px 0 rgba(0, 0, 0, 0.125)",
-      },
-      opacity: {
-        15: "0.15",
-        35: "0.35",
-        80: "0.80",
-      },
       colors: {
         interplanetaryblue: {
           50: "#92e2ff",
@@ -187,10 +184,6 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [require("@tailwindcss/typography")],
-  experimental: "all",
-  future: {
-    purgeLayersByDefault: true,
-  },
-};
+  // eslint-disable-next-line global-require
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+}
