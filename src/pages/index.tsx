@@ -39,7 +39,7 @@ export default function Home() {
                 </svg>
                 https://
               </span>
-              sci.pub
+              scipub.foundation
             </a>
           </Link>
         </div>
