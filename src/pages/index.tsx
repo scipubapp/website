@@ -192,9 +192,9 @@ export default function Home() {
       <footer className="w-full pt-4 pb-16 mx-auto text-center space-mono">
         <div className="mx-auto text-center max-w-max">
           <small className="p-2 leading-7 text-black md:p-3 text-md md:leading-10">
-            Copyright © 2020{" "}
+            Copyright © 2021-2022{" "}
             <a className="underline" href="https://dar.i.ng">
-              The Daring LLC
+              SciPub Foundation
             </a>
             . All Rights Reserved · Made with ❤ on Earth ·{" "}
             <a
