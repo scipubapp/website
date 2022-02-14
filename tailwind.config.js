@@ -47,6 +47,9 @@ module.exports = {
   },
   variants: {
     extend: {
+      shadows: {
+        innerxl: "inset 0 8px 16px rgba(0, 0, .86)",
+      },
       colors: {
         interplanetaryblue: {
           50: "#92e2ff",

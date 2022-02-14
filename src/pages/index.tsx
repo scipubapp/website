@@ -18,8 +18,8 @@ export default function Home() {
   // }, [currentUrl])
 
   return (
-    <div className="flex flex-col items-center justify-center mx-auto space-y-3 max-w-7xl">
-      <div className="flex flex-row w-full py-1 mx-2 mt-8 bg-transparent border-2 border-black shadow-inner rounded-2xl lg:mx-1 xl:mx-0">
+    <div className="flex flex-col items-center justify-center px-2 mx-auto space-y-3 max-w-7xl md:px-5">
+      <div className="flex flex-row w-full py-1 mx-2 mt-8 bg-transparent border-2 border-black rounded-full shadow-xs lg:mx-1 xl:mx-0">
         <div className="my-auto ml-3"></div>
         <div className="mx-auto my-auto">
           <Link href="/" passHref>
@@ -46,46 +46,54 @@ export default function Home() {
         <div className="my-auto mr-3"></div>
       </div>
 
-      <div className="flex flex-col items-center justify-center block col-span-3 py-10 space-y-5">
-        <p className="text-2xl font-bold uppercase">
-          Open technology for distributing research
-        </p>
-        <h1 className="text-5xl font-extrabold">
+      <div className="flex flex-col items-center justify-center block px-2 py-3 space-y-5 sm:py-8 md:px-0">
+        <h1 className="text-4xl font-extrabold text-center sm:text-5xl leading-[3rem] md:leading-normal">
           The{" "}
-          <span className="bg-gradient-to-r from-yellow-100 to-teal-100">
+          <span className="bg-gradient-to-r from-teal-100 to-green-100 rounded-md px-[0.15rem] mr-[0.1rem]">
             Sci
           </span>
-          <span className="italic">entific </span>
-          <span className="bg-gradient-to-r from-teal-100 to-blue-200">
+          entific{" "}
+          <span className="bg-gradient-to-l from-cyan-100 to-sky-100 rounded-md px-[0.15rem] mr-[0.1rem]">
             Pub
           </span>
-          <span className="italic">lishing </span>
-          Protocol
+          <span className="z-20">lishing </span>
+          <span className="bg-gradient-to-r from-orange-100 to-yellow-100 rounded-md px-[0.15rem] mr-[0.1rem]">
+            Foundation
+          </span>
         </h1>
+        <h2 className="text-xl font-bold tracking-wide text-center uppercase sm:text-2xl">
+          We build open technology for research distribution
+        </h2>
       </div>
-      <div className="space-x-3 text-xl">
-        <button className="px-4 py-2 transition-all duration-300 rounded-md bg-warmgray-100 hover:bg-warmgray-50">
+      <div className="flex flex-wrap items-center justify-center w-full gap-3 text-xl md:gap-0 md:space-x-3">
+        <Link href="/scipub" passHref>
+          <a className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+            <strong>Articles</strong>
+          </a>
+        </Link>
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>Code</strong>
         </button>
-        <button className="px-4 py-2 transition-all duration-300 rounded-md bg-warmgray-100 hover:bg-warmgray-50">
-          <strong>Articles</strong>
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+          <strong>DAO</strong>
         </button>
-        <button className="px-4 py-2 transition-all duration-300 rounded-md bg-warmgray-100 hover:bg-warmgray-50">
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>Grants</strong>
         </button>
-        <button className="px-4 py-2 transition-all duration-300 rounded-md bg-warmgray-100 hover:bg-warmgray-50">
-          <strong>Team</strong>
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+          <strong>People</strong>
         </button>
       </div>
       {/* <img src="logo_optimized.svg" alt="SciPub" className="w-1/3 mx-auto" /> */}
       <Divider />
-      <div className="grid grid-cols-3 pb-6 gap-x-5">
+      <div className="grid pb-6 md:grid-cols-3 gap-y-3 md:gap-y-0 md:gap-x-5">
         <DescriptorBox
           gradient="bg-gradient-to-br from-orange-50 to-lime-50"
           innerDivGradient="bg-gradient-to-r from-orange-100 via-yellow-100 to-lime-100"
-          headerMaintext="What SciPub Is"
-          descriptorMainText="scipub:// is a decentralized protocol for research publication. The different modules of the protocol — identity management, storage, licensing, etc. — are building blocks for a truly peer-to-peer publishing system."
-          readMoreHref=""
+          headerMaintext="What Is SciPub?"
+          descriptorMainText="The SciPub Foundation is building the scipub:// protocol to make decentralized research publication a reality. Together, the different modules of the protocol constitute a complete peer-to-peer publishing system."
+          // modules — identity management, storage, licensing, etc. —
+          readMoreHref="./scipub"
         />
         <DescriptorBox
           gradient="bg-gradient-to-tr from-lime-50 to-cyan-50"
@@ -98,17 +106,17 @@ export default function Home() {
           gradient="bg-gradient-to-br from-cyan-50 to-sky-50"
           innerDivGradient="bg-gradient-to-r from-teal-100 via-sky-200 to-[#a6e7ff]"
           headerMaintext="Our Vision"
-          descriptorMainText={`We envision a future where:,
-            ${(
-              <ol className="list-decimal list-inside">
-                <li>every individual can freely access scientific knowledge</li>
-                <li>
-                  the research pipeline is open from idea through to publication
-                </li>
-                <li>journals are curators and not gatekeepers</li>
-              </ol>
-            )}`}
           readMoreHref=""
+          descriptorHTML={
+            <>
+              <p>We envision a future where:</p>
+              <ol className="list-decimal list-inside">
+                <li>Every individual can freely access scientific knowledge</li>
+                <li>Research is transparent from hypothesis to publication</li>
+                <li>Journals are curators and not gatekeepers</li>
+              </ol>
+            </>
+          }
           readMoreHoverBackgroundColor="bg-"
         />
       </div>
@@ -133,11 +141,11 @@ export default function Home() {
       <img
         src="./images/scipub_liras_venn_diagram.svg"
         alt="SciPub"
-        className="w-1/2"
+        className="w-full"
       />
       <Divider />
       <HeaderText />
-      <div className="grid w-full grid-cols-1 gap-6 pt-6 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 md:grid-cols-2">
         <ArticleList
           articleHref="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
           articleTitle="Is the staggeringly profitable business of scientific publishing bad for science?"
@@ -164,37 +172,41 @@ export default function Home() {
           articleTitle="Open Science Isn't Always Open to All Scientists"
           articleAuthor="Christie Bahlai, et al."
           articlePublication="American Scientist"
-          articleDescription="Bahlai, Bartlett, Burgio, Fournier, Keiser, Poisot, and Whitney discuss the implications of open science."
+          articleDescription="Bahlai, et al. discuss the implications of open science."
         />
         <ArticleList
           articleHref="https://science.thewire.in/the-sciences/scientific-publishing-peer-review-open-access/"
           articleTitle="The Problems With Science Journals Trying to Be Gatekeepers – and Some Solutions"
           articleAuthor="Peter Ellis"
           articlePublication="The Wire Science"
-          articleDescription="Bahlai, Bartlett, Burgio, Fournier, Keiser, Poisot, and Whitney discuss the implications of open science."
+          articleDescription="Ellis discusses the implications of open science."
         />
         <ArticleList
           articleHref="https://science.thewire.in/the-sciences/scientific-publishing-peer-review-open-access/"
           articleTitle="Distrust and expertise: Can scientific journals continue as gatekeepers?"
           articleAuthor="Vanessa Heggie"
           articlePublication="The Royal Society Journal of the History of Science"
-          articleDescription="Bahlai, Bartlett, Burgio, Fournier, Keiser, Poisot, and Whitney discuss the implications of open science."
+          articleDescription="Heggie discusses the implications of open science."
         />
         <ArticleList
           articleHref="https://doi.org/10.1002/jbmr.4319"
           articleTitle="Editorial Peer Reviewers as Shepherds, Rather Than Gatekeepers"
           articleAuthor="Joel Boerckel, Lilian Plotkin, &amp; Natalie Sims"
           articlePublication="the Journal of Bone and Mineral Research"
-          articleDescription="Bahlai, Bartlett, Burgio, Fournier, Keiser, Poisot, and Whitney discuss the implications of open science."
+          articleDescription="Boerckel, Plotkin, and Sims discuss the implications of open science."
         />
       </div>
       <Divider />
       <footer className="w-full pt-4 pb-16 mx-auto text-center space-mono">
         <div className="mx-auto text-center max-w-max">
           <small className="p-2 leading-7 text-black md:p-3 text-md md:leading-10">
-            Copyright © 2021-2022{" "}
-            <a className="underline" href="https://dar.i.ng">
+            Copyright © 2022{" "}
+            <a className="underline" href="https://scipub.foundation">
               SciPub Foundation
+            </a>
+            . Developed by{" "}
+            <a className="underline" href="https://dar.i.ng">
+              The Daring LLC
             </a>
             . All Rights Reserved · Made with ❤ on Earth ·{" "}
             <a
@@ -213,22 +225,25 @@ export default function Home() {
 }
 
 const DescriptorBox = (props) => {
+  console.log(JSON.stringify(props.descriptorMainText))
+
   return (
     <div
-      className={`p-4 flex flex-col justify-between rounded-md  ${props.gradient}`}
+      className={`p-4 pb-6 flex flex-col justify-between rounded-md  ${props.gradient}`}
     >
       <div>
-        <div className={`font-bold text-2xl ${props.innerDivGradient}`}>
+        <div className={`font-bold text-2xl`}>
           <h3 className="p-1 px-2 border-b-2 border-black">
             {props.headerMaintext}
           </h3>
         </div>
         <div className="px-3 py-2">
           <p
-            className="tracking-tight text-[1.1rem] leading-[1.6rem]"
+            className="tracking-tight tracking-normal text-[1.1rem] leading-[1.6rem]"
             key={props.descriptorMainText}
           >
             {props.descriptorMainText}
+            {props.descriptorHTML}
           </p>
         </div>
       </div>
@@ -245,8 +260,32 @@ const DescriptorBox = (props) => {
 }
 
 function ArticleList(props) {
+  const gradientColor = selectRandomGradientColor()
+
+  const fromColor = gradientColor[0]
+  const toColor = gradientColor[1]
+
+  function selectRandomGradientColor() {
+    const randomNumber = Math.random() * 100
+
+    if (randomNumber > 80) {
+      return ["blue", "green"]
+    } else if (randomNumber > 60 && randomNumber < 80) {
+      return ["sky", "yellow"]
+    } else if (randomNumber > 40 && randomNumber < 60) {
+      return ["blue", "orange"]
+    } else if (randomNumber > 20 && randomNumber < 40) {
+      return ["blue", "orange"]
+    } else {
+      console.log("YEAH BABY")
+      return "p-6 rounded-md shadow-sm bg-gradient-to-tr from-blue-100 to-blue-100"
+    }
+  }
+
+  let divClass = `${selectRandomGradientColor()}`
+
   return (
-    <div className="p-6 rounded-md shadow-sm bg-gradient-to-tr from-blue-50 to-emerald-50">
+    <div className="p-6 rounded-md shadow-sm bg-gradient-to-tr from-emerald-50 to-blue-50">
       <div className="pb-2 border-b-2 border-black border-dotted ">
         <a
           className="underline"
@@ -286,20 +325,50 @@ function ArticleList(props) {
 
 function Divider() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="block my-8 w-7 h-7"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M20 12H4"
-      />
-    </svg>
+    <div className="flex flex-row -rotate-90">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="block my-8 rotate-45 w-7 h-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M20 12H4"
+        />
+      </svg>{" "}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="block my-8 w-7 h-7 rotate-[25deg]"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M20 12H4"
+        />
+      </svg>{" "}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="block my-8 -rotate-0 w-7 h-7 rotate-12"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M20 12H4"
+        />
+      </svg>
+    </div>
   )
 }
 
