@@ -65,28 +65,28 @@ export default function Home() {
           We build open technology for research distribution
         </h2>
       </div>
-      <div className="flex flex-wrap items-center justify-center w-full text-xl gap-3 md:gap-0 md:space-x-3">
+      <div className="flex flex-wrap items-center justify-center w-full gap-3 text-xl md:gap-0 md:space-x-3">
         <Link href="/scipub" passHref>
-          <a className="px-4 py-2 border-2 border-black shadow-md transition-all duration-300 rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+          <a className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
             <strong>Articles</strong>
           </a>
         </Link>
-        <button className="px-4 py-2 border-2 border-black shadow-md transition-all duration-300 rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>Code</strong>
         </button>
-        <button className="px-4 py-2 border-2 border-black shadow-md transition-all duration-300 rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>DAO</strong>
         </button>
-        <button className="px-4 py-2 border-2 border-black shadow-md transition-all duration-300 rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>Grants</strong>
         </button>
-        <button className="px-4 py-2 border-2 border-black shadow-md transition-all duration-300 rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
+        <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>People</strong>
         </button>
       </div>
       {/* <img src="logo_optimized.svg" alt="SciPub" className="w-1/3 mx-auto" /> */}
       <Divider />
-      <div className="pb-6 grid md:grid-cols-3 gap-y-3 md:gap-y-0 md:gap-x-5">
+      <div className="grid pb-6 md:grid-cols-3 gap-y-3 md:gap-y-0 md:gap-x-5">
         <DescriptorBox
           gradient="bg-gradient-to-br from-orange-50 to-lime-50"
           innerDivGradient="bg-gradient-to-r from-orange-100 via-yellow-100 to-lime-100"
@@ -138,6 +138,7 @@ export default function Home() {
           </        )}
       </Disclosure> */}
       <Divider />
+      {/* @ts-ignore */}
       <img
         src="./images/scipub_liras_venn_diagram.svg"
         alt="SciPub"
@@ -145,7 +146,7 @@ export default function Home() {
       />
       <Divider />
       <HeaderText />
-      <div className="w-full pt-6 grid grid-cols-1 gap-3 md:gap-5 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 md:grid-cols-2">
         <ArticleList
           articleHref="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
           articleTitle="Is the staggeringly profitable business of scientific publishing bad for science?"
@@ -199,7 +200,7 @@ export default function Home() {
       <Divider />
       <footer className="w-full pt-4 pb-16 mx-auto text-center space-mono">
         <div className="mx-auto text-center max-w-max">
-          <small className="p-2 text-black leading-7 md:p-3 text-md md:leading-10">
+          <small className="p-2 leading-7 text-black md:p-3 text-md md:leading-10">
             Copyright © 2022{" "}
             <a className="underline" href="https://scipub.foundation">
               SciPub Foundation
@@ -225,8 +226,6 @@ export default function Home() {
 }
 
 const DescriptorBox = (props) => {
-  console.log(JSON.stringify(props.descriptorMainText))
-
   return (
     <div
       className={`p-4 pb-6 flex flex-col justify-between rounded-md  ${props.gradient}`}
@@ -251,7 +250,7 @@ const DescriptorBox = (props) => {
         className="block px-3 py-2 text-lg font-semibold justify-self-end"
         href={props.readMoreHref}
       >
-        <span className="pt-2 pb-2 pr-2 border-b-2 border-gray-800 transition-all duration-300 hover:bg-opacity-20 hover:pl-2 hover:bg-warmgray-400">
+        <span className="pt-2 pb-2 pr-2 transition-all duration-300 border-b-2 border-gray-800 hover:bg-opacity-20 hover:pl-2 hover:bg-warmgray-400">
           Read more&nbsp;&nbsp;{"->"}
         </span>
       </a>
@@ -277,7 +276,6 @@ function ArticleList(props) {
     } else if (randomNumber > 20 && randomNumber < 40) {
       return ["blue", "orange"]
     } else {
-      console.log("YEAH BABY")
       return "p-6 rounded-md shadow-sm bg-gradient-to-tr from-blue-100 to-blue-100"
     }
   }
