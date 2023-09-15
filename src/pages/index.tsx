@@ -3,20 +3,6 @@ import React from "react"
 import Link from "next/link"
 
 export default function Home() {
-  // const [currentUrl, setCurrentUrl] = useState("")
-
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     let urlStringToParse = ""
-  //     urlStringToParse = window.location.href
-
-  //     // remove http:// and https:// from the urlStringToParse variable
-  //     urlStringToParse = urlStringToParse.replace(/^https?\:\/\//i, "")
-
-  //     setCurrentUrl(urlStringToParse)
-  //   }
-  // }, [currentUrl])
-
   return (
     <div className="flex flex-col items-center justify-center px-2 mx-auto space-y-3 max-w-7xl md:px-5">
       <div className="flex flex-row w-full py-1 mx-2 mt-8 bg-transparent border-2 border-black rounded-full shadow-xs lg:mx-1 xl:mx-0">
@@ -46,18 +32,24 @@ export default function Home() {
         <div className="my-auto mr-3"></div>
       </div>
 
+      <img
+        src="./images/logo.jpg"
+        className="max-w-xs pt-3 sm:pt-8"
+        alt="SciPub"
+      />
+
       <div className="flex flex-col items-center justify-center block px-2 py-3 space-y-5 sm:py-8 md:px-0">
         <h1 className="text-4xl font-extrabold text-center sm:text-5xl leading-[3rem] md:leading-normal">
           The{" "}
-          <span className="bg-gradient-to-r from-teal-100 to-green-100 rounded-md px-[0.15rem] mr-[0.1rem]">
+          <span className="sm:bg-gradient-to-r from-teal-100 to-green-100 rounded-md px-[0.15rem] mr-[0.1rem]">
             Sci
           </span>
           entific{" "}
-          <span className="bg-gradient-to-l from-cyan-100 to-sky-100 rounded-md px-[0.15rem] mr-[0.1rem]">
+          <span className="sm:bg-gradient-to-l from-cyan-100 to-sky-100 rounded-md px-[0.15rem] mr-[0.1rem]">
             Pub
           </span>
           <span className="z-20">lishing </span>
-          <span className="bg-gradient-to-r from-orange-100 to-yellow-100 rounded-md px-[0.15rem] mr-[0.1rem]">
+          <span className="2xl:bg-gradient-to-r from-orange-100 to-yellow-100 rounded-md px-[0.15rem] mr-[0.1rem]">
             Foundation
           </span>
         </h1>
@@ -65,7 +57,7 @@ export default function Home() {
           We build open technology for research distribution
         </h2>
       </div>
-      <div className="flex flex-wrap items-center justify-center w-full gap-3 text-xl md:gap-0 md:space-x-3">
+      {/* <div className="flex flex-wrap items-center justify-center w-full gap-3 text-xl md:gap-0 md:space-x-3">
         <Link href="/scipub" passHref>
           <a className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
             <strong>Articles</strong>
@@ -83,30 +75,29 @@ export default function Home() {
         <button className="px-4 py-2 transition-all duration-300 border-2 border-black shadow-md rounded-xl bg-warmgray-50 hover:bg-warmgray-200 hover:bg-opacity-80">
           <strong>People</strong>
         </button>
-      </div>
+      </div> */}
       {/* <img src="logo_optimized.svg" alt="SciPub" className="w-1/3 mx-auto" /> */}
-      <Divider />
       <div className="grid pb-6 md:grid-cols-3 gap-y-3 md:gap-y-0 md:gap-x-5">
         <DescriptorBox
           gradient="bg-gradient-to-br from-orange-50 to-lime-50"
           innerDivGradient="bg-gradient-to-r from-orange-100 via-yellow-100 to-lime-100"
           headerMaintext="What Is SciPub?"
-          descriptorMainText="The SciPub Foundation is building the scipub:// protocol to make decentralized research publication a reality. Together, the different modules of the protocol constitute a complete peer-to-peer publishing system."
+          descriptorMainText="The SciPub Foundation is building protocols to make decentralized research publication a reality. Together, the modules developed by the foundation constitute a complete peer-to-peer publishing system."
           // modules — identity management, storage, licensing, etc. —
-          readMoreHref="./scipub"
+          // readMoreHref="./scipub"
         />
         <DescriptorBox
           gradient="bg-gradient-to-tr from-lime-50 to-cyan-50"
           innerDivGradient="bg-gradient-to-r from-lime-100 via-emerald-100 to-teal-100"
           headerMaintext="Our Mission"
           descriptorMainText="SciPub's mission is to make scientific publishing accessible to all, and scientific knowledge free to access. We strongly believe that everyone should be able to distribute and consume scientific information."
-          readMoreHref=""
+          // readMoreHref=""
         />
         <DescriptorBox
           gradient="bg-gradient-to-br from-cyan-50 to-sky-50"
           innerDivGradient="bg-gradient-to-r from-teal-100 via-sky-200 to-[#a6e7ff]"
           headerMaintext="Our Vision"
-          readMoreHref=""
+          // readMoreHref=""
           descriptorHTML={
             <>
               <p>We envision a future where:</p>
@@ -146,7 +137,7 @@ export default function Home() {
       />
       <Divider />
       <HeaderText />
-      <div className="grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-3 py-6 md:gap-5 md:grid-cols-2">
         <ArticleList
           articleHref="https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science"
           articleTitle="Is the staggeringly profitable business of scientific publishing bad for science?"
@@ -203,15 +194,12 @@ export default function Home() {
           <small className="p-2 leading-7 text-black md:p-3 text-md md:leading-10">
             Copyright © 2022{" "}
             <a className="underline" href="https://scipub.foundation">
-              SciPub Foundation
+              Scientific Publishing Foundation
             </a>
-            . Developed by{" "}
-            <a className="underline" href="https://dar.i.ng">
-              The Daring LLC
-            </a>
-            . All Rights Reserved · Made with ❤ on Earth ·{" "}
+            <p>6 Liberty Square # 2152, Boston, MA 02109, United States</p>
+            All Rights Reserved · Made with ❤ on Earth ·{" "}
             <a
-              href="https://github.com/interplanetarypub/website"
+              href="https://github.com/scipubfdn"
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -246,14 +234,14 @@ const DescriptorBox = (props) => {
           </p>
         </div>
       </div>
-      <a
+      {/* <a
         className="block px-3 py-2 text-lg font-semibold justify-self-end"
         href={props.readMoreHref}
       >
         <span className="pt-2 pb-2 pr-2 transition-all duration-300 border-b-2 border-gray-800 hover:bg-opacity-20 hover:pl-2 hover:bg-warmgray-400">
           Read more&nbsp;&nbsp;{"->"}
         </span>
-      </a>
+      </a> */}
     </div>
   )
 }
@@ -322,11 +310,33 @@ function ArticleList(props) {
 }
 
 function Divider() {
+  let side = "left"
+  let randomNumberBetweenOneAndTwo = Math.random() * 100
+  if (randomNumberBetweenOneAndTwo > 50) {
+    side = "left"
+  } else {
+    side = "right"
+  }
+
+  let rotate12 = ""
+  let rotate25 = ""
+  let rotate45 = ""
+
+  if (side === "left") {
+    rotate12 = "rotate-12 block my-8 w-7 h-7"
+    rotate25 = "rotate-[25deg] block my-8 w-7 h-7"
+    rotate45 = "rotate-45 block my-8 w-7 h-7"
+  } else if (side === "right") {
+    rotate12 = "-rotate-12 block my-8 w-7 h-7"
+    rotate25 = "rotate-[-25deg] block my-8 w-7 h-7"
+    rotate45 = "-rotate-45 block my-8 w-7 h-7"
+  }
+
   return (
     <div className="flex flex-row -rotate-90">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="block my-8 rotate-45 w-7 h-7"
+        className={rotate45}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -340,7 +350,7 @@ function Divider() {
       </svg>{" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="block my-8 w-7 h-7 rotate-[25deg]"
+        className={rotate25}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -354,7 +364,7 @@ function Divider() {
       </svg>{" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="block my-8 -rotate-0 w-7 h-7 rotate-12"
+        className={rotate12}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
